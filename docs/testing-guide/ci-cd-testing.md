@@ -117,6 +117,18 @@ Gói không chứa Flutter; Mobile SKIP không đồng nghĩa mọi nền tảng
 
 ## Bài tập FAIL → sửa → PASS
 
+### Nếu Mobile lỗi sdkmanager: command not found
+
+Đây là lỗi chuẩn bị môi trường CI, chưa chạy test case ứng dụng. Workflow phải
+thiết lập Android SDK command-line tools và thêm sdkmanager vào PATH trước bước
+cài platform/build-tools/NDK. Bản sửa dùng android-actions/setup-android@v4,
+command-line tools 22.0, sau đó kiểm tra đường dẫn và phiên bản sdkmanager.
+Không cần mở emulator tại máy bạn để sửa lỗi này trên GitHub.
+Sau khi đẩy bản sửa, dùng Run workflow trên nhánh main và bật run_mobile để tạo
+lượt mới. Re-run lượt cũ vẫn dùng workflow của commit cũ.
+
+### Minh họa lỗi expected
+
 Tạo nhánh thực hành, đổi một expected đã biết trong catalog, commit/push.
 Xem CI đỏ và report chỉ ra trường sai. Khôi phục expected đúng requirement,
 commit/push và quan sát chạy lại. Không merge expected sai vào nhánh chính.
