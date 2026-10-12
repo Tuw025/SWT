@@ -1,0 +1,200 @@
+{
+  "provenance": {
+    "generatedBy": "Codex in this conversation",
+    "generatedAt": "2026-10-12",
+    "status": "AI proposals; not student-approved",
+    "method": "Read requirements, API contract and student Lab catalog; write static expected before execution."
+  },
+  "cases": [
+    {
+      "id": "AI-001",
+      "title": "Khoảng trắng được loại bỏ trước khi kiểm tra",
+      "kind": "check",
+      "input": {
+        "day": " 29 ",
+        "month": " 2 ",
+        "year": " 2000 "
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 29,
+        "isLeapYear": true,
+        "normalizedDate": "29/02/2000",
+        "message": "29/02/2000 is correct date time!"
+      },
+      "requirementIds": [
+        "R06",
+        "R09",
+        "R13"
+      ],
+      "rationale": "Bổ sung cho LAB1-DATE-11: cùng ngày nhuận nhưng có khoảng trắng. Quyết định áp dụng số 4 trong requirements.md cho phép trim.",
+      "notes": [],
+      "source": {
+        "file": "AI proposal from Codex",
+        "sheet": "requirements + Lab catalog",
+        "id": "AI-001"
+      }
+    },
+    {
+      "id": "AI-002",
+      "title": "Nhiều ô cùng sai: báo Day trước",
+      "kind": "check",
+      "input": {
+        "day": "abc",
+        "month": "13",
+        "year": "999"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Day",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Day is incorrect format!"
+      },
+      "requirementIds": [
+        "R03",
+        "R04",
+        "R05",
+        "R06"
+      ],
+      "rationale": "Quyết định áp dụng số 3 quy định Day → Month → Year. Input có ba lỗi, expected chỉ báo lỗi định dạng Day.",
+      "notes": [],
+      "source": {
+        "file": "AI proposal from Codex",
+        "sheet": "requirements + Lab catalog",
+        "id": "AI-002"
+      }
+    },
+    {
+      "id": "AI-003",
+      "title": "Số thập phân không phải số nguyên",
+      "kind": "check",
+      "input": {
+        "day": "2.5",
+        "month": "2",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Day",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Day is incorrect format!"
+      },
+      "requirementIds": [
+        "R03",
+        "R06"
+      ],
+      "rationale": "Day 2.5 sai định dạng; không được đổi thành 2 hoặc coi là ngoài khoảng.",
+      "notes": [],
+      "source": {
+        "file": "AI proposal from Codex",
+        "sheet": "requirements + Lab catalog",
+        "id": "AI-003"
+      }
+    },
+    {
+      "id": "AI-004",
+      "title": "31 tháng 4: ví dụ đề xuất bị trùng Lab",
+      "kind": "check",
+      "input": {
+        "day": "31",
+        "month": "4",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 30,
+        "isLeapYear": false,
+        "normalizedDate": "31/04/2026",
+        "message": "31/04/2026 is NOT correct date time!"
+      },
+      "requirementIds": [
+        "R07",
+        "R10"
+      ],
+      "rationale": "Input này đã có trong LAB1-DATE-01. Gợi ý loại vì không tăng độ bao phủ; đây là bài thực hành nhận ra AI đề xuất trùng.",
+      "notes": [],
+      "source": {
+        "file": "AI proposal from Codex",
+        "sheet": "requirements + Lab catalog",
+        "id": "AI-004"
+      }
+    },
+    {
+      "id": "AI-005",
+      "title": "Năm 2400 chia hết 400 là năm nhuận",
+      "kind": "check",
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2400"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 29,
+        "isLeapYear": true,
+        "normalizedDate": "29/02/2400",
+        "message": "29/02/2400 is correct date time!"
+      },
+      "requirementIds": [
+        "R05",
+        "R08",
+        "R09"
+      ],
+      "rationale": "2400 trong khoảng Year, chia hết 400: tháng 2 có 29 ngày. Đối chiếu với case năm 2000 trong Lab.",
+      "notes": [],
+      "source": {
+        "file": "AI proposal from Codex",
+        "sheet": "requirements + Lab catalog",
+        "id": "AI-005"
+      }
+    },
+    {
+      "id": "AI-006",
+      "title": "Month ngay ngoài biên trên",
+      "kind": "check",
+      "input": {
+        "day": "1",
+        "month": "13",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Month",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Month is out of range!"
+      },
+      "requirementIds": [
+        "R04",
+        "R06"
+      ],
+      "rationale": "Month 13 có định dạng số nguyên nhưng vượt 12; Day và Year hợp lệ nên lỗi đầu tiên ở Month.",
+      "notes": [],
+      "source": {
+        "file": "AI proposal from Codex",
+        "sheet": "requirements + Lab catalog",
+        "id": "AI-006"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2005 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    "Test Case_done.xls",
+    "Lab2_PhamTuanTrien.xlsx"
+  ],
+  "cases": [
+    {
+      "id": "LAB1-DATE-01",
+      "title": "Verify April does not have 31 days",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A11:D11",
+        "id": "[Module1 -1]",
+        "procedure": "1. Launch the application.\n2. Enter 31 in Day.\n3. Enter 4 in Month.\n4. Enter 2026 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “31/4/2026 is NOT correct date time!”"
+      },
+      "notes": [
+        "Lab dùng ngày không đệm số 0; bản thực hành dùng dd/mm/yyyy. Chế độ strict-source giữ nguyên message của Lab và có thể FAIL vì khác định dạng."
+      ],
+      "input": {
+        "day": "31",
+        "month": "4",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 30,
+        "isLeapYear": false,
+        "normalizedDate": "31/04/2026",
+        "message": "31/04/2026 is NOT correct date time!"
+      },
+      "sourceMessage": "31/4/2026 is NOT correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-DATE-02",
+      "title": "Verify June does not have 31 days",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A12:D12",
+        "id": "[Module1 -2]",
+        "procedure": "1. Launch the application.\n2. Enter 31 in Day.\n3. Enter 6 in Month.\n4. Enter 2026 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “31/6/2026 is NOT correct date time!”"
+      },
+      "notes": [
+        "Lab dùng ngày không đệm số 0; bản thực hành dùng dd/mm/yyyy. Chế độ strict-source giữ nguyên message của Lab và có thể FAIL vì khác định dạng."
+      ],
+      "input": {
+        "day": "31",
+        "month": "6",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 30,
+        "isLeapYear": false,
+        "normalizedDate": "31/06/2026",
+        "message": "31/06/2026 is NOT correct date time!"
+      },
+      "sourceMessage": "31/6/2026 is NOT correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-DATE-03",
+      "title": "Verify September does not have 31 days",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A14:D14",
+        "id": "[Module1 -3]",
+        "procedure": "1. Launch the application.\n2. Enter 31 in Day.\n3. Enter 9 in Month.\n4. Enter 2026 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “31/9/2026 is NOT correct date time!”"
+      },
+      "notes": [
+        "Lab dùng ngày không đệm số 0; bản thực hành dùng dd/mm/yyyy. Chế độ strict-source giữ nguyên message của Lab và có thể FAIL vì khác định dạng."
+      ],
+      "input": {
+        "day": "31",
+        "month": "9",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 30,
+        "isLeapYear": false,
+        "normalizedDate": "31/09/2026",
+        "message": "31/09/2026 is NOT correct date time!"
+      },
+      "sourceMessage": "31/9/2026 is NOT correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-DATE-04",
+      "title": "Verify November does not have 31 days",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A15:D15",
+        "id": "[Module1 -4]",
+        "procedure": "1. Launch the application.\n2. Enter 31 in Day.\n3. Enter 11 in Month.\n4. Enter 2026 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “31/11/2026 is NOT correct date time!”"
+      },
+      "notes": [],
+      "input": {
+        "day": "31",
+        "month": "11",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 30,
+        "isLeapYear": false,
+        "normalizedDate": "31/11/2026",
+        "message": "31/11/2026 is NOT correct date time!"
+      },
+      "sourceMessage": "31/11/2026 is NOT correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-DATE-05",
+      "title": "Verify April accepts 30 days",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A17:D17",
+        "id": "[Module1 -5]",
+        "procedure": "1. Launch the application.\n2. Enter 30 in Day.\n3. Enter 4 in Month.\n4. Enter 2026 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “30/4/2026 is correct date time!”"
+      },
+      "notes": [
+        "Lab dùng ngày không đệm số 0; bản thực hành dùng dd/mm/yyyy. Chế độ strict-source giữ nguyên message của Lab và có thể FAIL vì khác định dạng."
+      ],
+      "input": {
+        "day": "30",
+        "month": "4",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 30,
+        "isLeapYear": false,
+        "normalizedDate": "30/04/2026",
+        "message": "30/04/2026 is correct date time!"
+      },
+      "sourceMessage": "30/4/2026 is correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-DATE-06",
+      "title": "Verify February 29 is invalid in a non-leap year",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A18:D18",
+        "id": "[Module1 -6]",
+        "procedure": "1. Launch the application.\n2. Enter 29 in Day.\n3. Enter 2 in Month.\n4. Enter 2023 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “29/2/2023 is NOT correct date time!”"
+      },
+      "notes": [
+        "Lab dùng ngày không đệm số 0; bản thực hành dùng dd/mm/yyyy. Chế độ strict-source giữ nguyên message của Lab và có thể FAIL vì khác định dạng."
+      ],
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2023"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 28,
+        "isLeapYear": false,
+        "normalizedDate": "29/02/2023",
+        "message": "29/02/2023 is NOT correct date time!"
+      },
+      "sourceMessage": "29/2/2023 is NOT correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-DATE-07",
+      "title": "Verify February 29 is invalid in a century year not divisible by 400",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A19:D19",
+        "id": "[Module1 -7]",
+        "procedure": "1. Launch the application.\n2. Enter 29 in Day.\n3. Enter 2 in Month.\n4. Enter 1900 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “29/2/1900 is NOT correct date time!”"
+      },
+      "notes": [
+        "Lab dùng ngày không đệm số 0; bản thực hành dùng dd/mm/yyyy. Chế độ strict-source giữ nguyên message của Lab và có thể FAIL vì khác định dạng."
+      ],
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "1900"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 28,
+        "isLeapYear": false,
+        "normalizedDate": "29/02/1900",
+        "message": "29/02/1900 is NOT correct date time!"
+      },
+      "sourceMessage": "29/2/1900 is NOT correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-DATE-08",
+      "title": "Verify March accepts 31 days",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A20:D20",
+        "id": "[Module1 -8]",
+        "procedure": "1. Launch the application.\n2. Enter 31 in Day.\n3. Enter 3 in Month.\n4. Enter 2026 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “31/3/2026 is correct date time!”"
+      },
+      "notes": [
+        "Lab dùng ngày không đệm số 0; bản thực hành dùng dd/mm/yyyy. Chế độ strict-source giữ nguyên message của Lab và có thể FAIL vì khác định dạng."
+      ],
+      "input": {
+        "day": "31",
+        "month": "3",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 31,
+        "isLeapYear": false,
+        "normalizedDate": "31/03/2026",
+        "message": "31/03/2026 is correct date time!"
+      },
+      "sourceMessage": "31/3/2026 is correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-DATE-09",
+      "title": "Verify February 28 is valid in a non-leap year",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A21:D21",
+        "id": "[Module1 -9]",
+        "procedure": "1. Launch the application.\n2. Enter 28 in Day.\n3. Enter 2 in Month.\n4. Enter 2023 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “28/2/2023 is correct date time!”"
+      },
+      "notes": [
+        "Lab dùng ngày không đệm số 0; bản thực hành dùng dd/mm/yyyy. Chế độ strict-source giữ nguyên message của Lab và có thể FAIL vì khác định dạng."
+      ],
+      "input": {
+        "day": "28",
+        "month": "2",
+        "year": "2023"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 28,
+        "isLeapYear": false,
+        "normalizedDate": "28/02/2023",
+        "message": "28/02/2023 is correct date time!"
+      },
+      "sourceMessage": "28/2/2023 is correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-DATE-10",
+      "title": "Verify February 29 is valid in a leap year divisible by 4 but not by 100",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A22:D22",
+        "id": "[Module1 -10]",
+        "procedure": "1. Launch the application.\n2. Enter 29 in Day.\n3. Enter 2 in Month.\n4. Enter 2024 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “29/2/2024 is correct date time!”"
+      },
+      "notes": [
+        "Lab dùng ngày không đệm số 0; bản thực hành dùng dd/mm/yyyy. Chế độ strict-source giữ nguyên message của Lab và có thể FAIL vì khác định dạng."
+      ],
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2024"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 29,
+        "isLeapYear": true,
+        "normalizedDate": "29/02/2024",
+        "message": "29/02/2024 is correct date time!"
+      },
+      "sourceMessage": "29/2/2024 is correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-DATE-11",
+      "title": "Verify February 29 is valid in a leap year divisible by 400",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "CheckDate",
+        "range": "A23:D23",
+        "id": "[Module1 -11]",
+        "procedure": "1. Launch the application.\n2. Enter 29 in Day.\n3. Enter 2 in Month.\n4. Enter 2000 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “29/2/2000 is correct date time!”"
+      },
+      "notes": [
+        "Lab dùng ngày không đệm số 0; bản thực hành dùng dd/mm/yyyy. Chế độ strict-source giữ nguyên message của Lab và có thể FAIL vì khác định dạng."
+      ],
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2000"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 29,
+        "isLeapYear": true,
+        "normalizedDate": "29/02/2000",
+        "message": "29/02/2000 is correct date time!"
+      },
+      "sourceMessage": "29/2/2000 is correct date time!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-INPUT-01",
+      "title": "Verify Day value below valid range",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "Input Validation",
+        "range": "A11:D11",
+        "id": "[Module2-1]",
+        "procedure": "1. Launch the application.\n2. Enter 0 in Day.\n3. Enter 1 in Month.\n4. Enter 2026 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “Input data for Day is out of range!”"
+      },
+      "notes": [],
+      "input": {
+        "day": "0",
+        "month": "1",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Day",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Day is out of range!"
+      },
+      "sourceMessage": "Input data for Day is out of range!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-INPUT-02",
+      "title": "Verify Day value above valid range",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "Input Validation",
+        "range": "A12:D12",
+        "id": "[Module2-2]",
+        "procedure": "1. Launch the application.\n2. Enter 32 in Day.\n3. Enter 1 in Month.\n4. Enter 2026 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “Input data for Day is out of range!”"
+      },
+      "notes": [],
+      "input": {
+        "day": "32",
+        "month": "1",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Day",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Day is out of range!"
+      },
+      "sourceMessage": "Input data for Day is out of range!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-INPUT-03",
+      "title": "Verify Month value below valid range",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "Input Validation",
+        "range": "A14:D14",
+        "id": "[Module2-3]",
+        "procedure": "1. Launch the application.\n2. Enter 1 in Day.\n3. Enter 0 in Month.\n4. Enter 2026  Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “Input data for Month is out of range!”"
+      },
+      "notes": [],
+      "input": {
+        "day": "1",
+        "month": "0",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Month",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Month is out of range!"
+      },
+      "sourceMessage": "Input data for Month is out of range!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-INPUT-04",
+      "title": "Verify Month value above valid range",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "Input Validation",
+        "range": "A15:D15",
+        "id": "[Module2-4]",
+        "procedure": "1. Launch the application.\n2. Enter 1 in Day.\n3. Enter 13 in Month.\n4. Enter 2026 Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “Input data for Month is out of range!”"
+      },
+      "notes": [],
+      "input": {
+        "day": "1",
+        "month": "13",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Month",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Month is out of range!"
+      },
+      "sourceMessage": "Input data for Month is out of range!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-INPUT-05",
+      "title": "Verify Year value below valid range",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "Input Validation",
+        "range": "A16:D16",
+        "id": "[Module2-5]",
+        "procedure": "1. Launch the application.\n2. Enter 1 in Day.\n3. Enter 12 in Month.\n4. Enter 999 Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “Input data for Year is out of range!”"
+      },
+      "notes": [],
+      "input": {
+        "day": "1",
+        "month": "12",
+        "year": "999"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Year",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Year is out of range!"
+      },
+      "sourceMessage": "Input data for Year is out of range!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-INPUT-06",
+      "title": "Verify Year value above valid range",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "Input Validation",
+        "range": "A17:D17",
+        "id": "[Module2-6]",
+        "procedure": "1. Launch the application.\n2. Enter 1 in Day.\n3. Enter 12 in Month.\n4. Enter 3001 Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “Input data for Year is out of range!”"
+      },
+      "notes": [],
+      "input": {
+        "day": "1",
+        "month": "12",
+        "year": "3001"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Year",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Year is out of range!"
+      },
+      "sourceMessage": "Input data for Year is out of range!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-INPUT-07",
+      "title": "Verify Day with non-numeric input",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "Input Validation",
+        "range": "A18:D18",
+        "id": "[Module2-7]",
+        "procedure": "1. Launch the application.\n2. Enter abc in Day.\n3. Enter 12 in Month.\n4. Enter 2026 Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “Input data for Day is incorrect format!”"
+      },
+      "notes": [],
+      "input": {
+        "day": "abc",
+        "month": "12",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Day",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Day is incorrect format!"
+      },
+      "sourceMessage": "Input data for Day is incorrect format!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-INPUT-08",
+      "title": "Verify Month with non-numeric input",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "Input Validation",
+        "range": "A19:D19",
+        "id": "[Module2-8]",
+        "procedure": "1. Launch the application.\n2. Enter 1 in Day.\n3. Enter abc in Month.\n4. Enter 2026 in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “Input data for Month is incorrect format!”"
+      },
+      "notes": [],
+      "input": {
+        "day": "1",
+        "month": "abc",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Month",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Month is incorrect format!"
+      },
+      "sourceMessage": "Input data for Month is incorrect format!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-INPUT-09",
+      "title": "Verify Year with non-numeric input",
+      "kind": "check",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "Input Validation",
+        "range": "A20:D20",
+        "id": "[Module2-9]",
+        "procedure": "1. Launch the application.\n2. Enter 1 in Day.\n3. Enter 12 in Month.\n4. Enter abc in Year.\n5. Click Check.",
+        "expected": "A message box is displayed with: “Input data for Year is incorrect format!”"
+      },
+      "notes": [],
+      "input": {
+        "day": "1",
+        "month": "12",
+        "year": "abc"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Year",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Year is incorrect format!"
+      },
+      "sourceMessage": "Input data for Year is incorrect format!",
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB1-GUI-01",
+      "title": "Verify Main Application Layout",
+      "kind": "layout",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "GUI",
+        "range": "A11:D11",
+        "id": "[Module2-1]",
+        "procedure": "1. Launch the Date Time Checker application.\n2. Observe the main application window.",
+        "expected": "The main form is displayed correctly with the following UI elements:\n• FU Logo is displayed in a picture box at the top-left corner.\n• The text “Date Time Checker” is displayed in Blue, using Arial font, size 26.\n• The labels “Day”, “Month”, and “Year” are displayed and left-aligned.\n• Three textboxes are displayed for entering Day, Month, and Year.\n• Two buttons, “Clear” and “Check”, are displayed.\n• The form does not contain Maximize and Minimize buttons."
+      },
+      "notes": [],
+      "topics": [
+        "web",
+        "mobile",
+        "visual"
+      ]
+    },
+    {
+      "id": "LAB1-GUI-02",
+      "title": "Verify Close Confirmation Dialog Layout",
+      "kind": "confirm-layout",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "GUI",
+        "range": "A12:D12",
+        "id": "[Module2-2]",
+        "procedure": "1. Launch the application.\n2. Click the X button at the top-right corner.\n3. Observe the confirmation dialog.",
+        "expected": "A confirmation dialog is displayed correctly with:\n• Dialog title displayed at the top.\n• Information icon displayed.\n• Message area displayed.\n• Two action buttons displayed.\n• Close X button displayed at the top-right corner of the dialog."
+      },
+      "notes": [],
+      "topics": [
+        "web",
+        "mobile",
+        "visual"
+      ]
+    },
+    {
+      "id": "LAB1-GUI-03",
+      "title": "Verify Clear Button Layout",
+      "kind": "clear-layout",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "GUI",
+        "range": "A14:D14",
+        "id": "[Module2-3]",
+        "procedure": "1. Launch the application.\n2. Observe the Clear button on the main screen.",
+        "expected": "The Clear button is displayed correctly on the main form.\n• Button text is “Clear”.\n• The button is visible and positioned beside the Check button as shown in the required layout."
+      },
+      "notes": [],
+      "topics": [
+        "web",
+        "mobile",
+        "visual"
+      ]
+    },
+    {
+      "id": "LAB1-GUI-04",
+      "title": "Verify Error Dialog Layout",
+      "kind": "error-layout",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "GUI",
+        "range": "A15:D15",
+        "id": "[Module2-4]",
+        "procedure": "1. Launch the application.\n2. Perform an input that causes an error dialog to appear.\n3. Observe the error dialog.",
+        "expected": "An Error dialog is displayed correctly with:\n• Dialog title displayed at the top.\n• Error icon displayed.\n• Message area displayed.\n• OK button displayed.\n• Close X button displayed at the top-right corner."
+      },
+      "notes": [
+        "Lab không chỉ định dữ liệu gây lỗi; dùng lại LAB1-INPUT-07 để mở Error dialog."
+      ],
+      "input": {
+        "day": "abc",
+        "month": "12",
+        "year": "2026"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Day",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Day is incorrect format!"
+      },
+      "topics": [
+        "web",
+        "mobile",
+        "visual"
+      ]
+    },
+    {
+      "id": "LAB1-GUI-05",
+      "title": "Verify Message Dialog Layout",
+      "kind": "message-layout",
+      "origin": "student",
+      "source": {
+        "file": "Test Case_done.xls",
+        "sheet": "GUI",
+        "range": "A16:D16",
+        "id": "[Module2-5]",
+        "procedure": "1. Launch the application.\n2. Perform an action that causes a result message dialog to appear.\n3. Observe the message dialog.",
+        "expected": "A Message dialog is displayed correctly with:\n• Dialog title displayed at the top.\n• Information icon displayed.\n• Message area displayed.\n• OK button displayed.\n• Close X button displayed at the top-right corner."
+      },
+      "notes": [
+        "Lab không chỉ định dữ liệu mở Message dialog; dùng lại LAB1-DATE-11."
+      ],
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2000"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 29,
+        "isLeapYear": true,
+        "normalizedDate": "29/02/2000",
+        "message": "29/02/2000 is correct date time!"
+      },
+      "topics": [
+        "web",
+        "mobile",
+        "visual"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-01",
+      "title": "CheckDate UTCID01: 0/1/2021 → F",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "0",
+        "month": "1",
+        "year": "2021"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Day",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Day is out of range!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:F53",
+        "column": "F",
+        "id": "UTCID01",
+        "expectedReturn": "F"
+      },
+      "notes": [
+        "D38=2021 là nhãn của hàng được chọn. E38=3001 nằm ngoài các cột case F:U; ghi nhận ô thừa, không đổi dữ liệu case thành 3001."
+      ],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-02",
+      "title": "CheckDate UTCID02: 32/1/2021 → F",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "32",
+        "month": "1",
+        "year": "2021"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Day",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Day is out of range!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:G53",
+        "column": "G",
+        "id": "UTCID02",
+        "expectedReturn": "F"
+      },
+      "notes": [
+        "D38=2021 là nhãn của hàng được chọn. E38=3001 nằm ngoài các cột case F:U; ghi nhận ô thừa, không đổi dữ liệu case thành 3001."
+      ],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-03",
+      "title": "CheckDate UTCID03: 1/0/2021 → F",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "0",
+        "year": "2021"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Month",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Month is out of range!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:H53",
+        "column": "H",
+        "id": "UTCID03",
+        "expectedReturn": "F"
+      },
+      "notes": [
+        "D38=2021 là nhãn của hàng được chọn. E38=3001 nằm ngoài các cột case F:U; ghi nhận ô thừa, không đổi dữ liệu case thành 3001."
+      ],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-04",
+      "title": "CheckDate UTCID04: 1/13/2021 → F",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "13",
+        "year": "2021"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Month",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Month is out of range!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:I53",
+        "column": "I",
+        "id": "UTCID04",
+        "expectedReturn": "F"
+      },
+      "notes": [
+        "D38=2021 là nhãn của hàng được chọn. E38=3001 nằm ngoài các cột case F:U; ghi nhận ô thừa, không đổi dữ liệu case thành 3001."
+      ],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-05",
+      "title": "CheckDate UTCID05: 1/1/999 → F",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "1",
+        "year": "999"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Year",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Year is out of range!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:J53",
+        "column": "J",
+        "id": "UTCID05",
+        "expectedReturn": "F"
+      },
+      "notes": [],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-06",
+      "title": "CheckDate UTCID06: 1/1/3001 → F",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "1",
+        "year": "3001"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Year",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Year is out of range!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:K53",
+        "column": "K",
+        "id": "UTCID06",
+        "expectedReturn": "F"
+      },
+      "notes": [],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-07",
+      "title": "CheckDate UTCID07: 1/1/1000 → T",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "1",
+        "year": "1000"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 31,
+        "isLeapYear": false,
+        "normalizedDate": "01/01/1000",
+        "message": "01/01/1000 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:L53",
+        "column": "L",
+        "id": "UTCID07",
+        "expectedReturn": "T"
+      },
+      "notes": [],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-08",
+      "title": "CheckDate UTCID08: 31/12/3000 → T",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "31",
+        "month": "12",
+        "year": "3000"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 31,
+        "isLeapYear": false,
+        "normalizedDate": "31/12/3000",
+        "message": "31/12/3000 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:M53",
+        "column": "M",
+        "id": "UTCID08",
+        "expectedReturn": "T"
+      },
+      "notes": [],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-09",
+      "title": "CheckDate UTCID09: 30/4/2021 → T",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "30",
+        "month": "4",
+        "year": "2021"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 30,
+        "isLeapYear": false,
+        "normalizedDate": "30/04/2021",
+        "message": "30/04/2021 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:N53",
+        "column": "N",
+        "id": "UTCID09",
+        "expectedReturn": "T"
+      },
+      "notes": [
+        "D38=2021 là nhãn của hàng được chọn. E38=3001 nằm ngoài các cột case F:U; ghi nhận ô thừa, không đổi dữ liệu case thành 3001."
+      ],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-10",
+      "title": "CheckDate UTCID10: 31/4/2021 → F",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "31",
+        "month": "4",
+        "year": "2021"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 30,
+        "isLeapYear": false,
+        "normalizedDate": "31/04/2021",
+        "message": "31/04/2021 is NOT correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:O53",
+        "column": "O",
+        "id": "UTCID10",
+        "expectedReturn": "F"
+      },
+      "notes": [
+        "D38=2021 là nhãn của hàng được chọn. E38=3001 nằm ngoài các cột case F:U; ghi nhận ô thừa, không đổi dữ liệu case thành 3001."
+      ],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-11",
+      "title": "CheckDate UTCID11: 28/2/2021 → T",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "28",
+        "month": "2",
+        "year": "2021"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 28,
+        "isLeapYear": false,
+        "normalizedDate": "28/02/2021",
+        "message": "28/02/2021 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:P53",
+        "column": "P",
+        "id": "UTCID11",
+        "expectedReturn": "T"
+      },
+      "notes": [
+        "D38=2021 là nhãn của hàng được chọn. E38=3001 nằm ngoài các cột case F:U; ghi nhận ô thừa, không đổi dữ liệu case thành 3001."
+      ],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-12",
+      "title": "CheckDate UTCID12: 29/2/2021 → F",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2021"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 28,
+        "isLeapYear": false,
+        "normalizedDate": "29/02/2021",
+        "message": "29/02/2021 is NOT correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:Q53",
+        "column": "Q",
+        "id": "UTCID12",
+        "expectedReturn": "F"
+      },
+      "notes": [
+        "D38=2021 là nhãn của hàng được chọn. E38=3001 nằm ngoài các cột case F:U; ghi nhận ô thừa, không đổi dữ liệu case thành 3001."
+      ],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-13",
+      "title": "CheckDate UTCID13: 29/2/2020 → T",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2020"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 29,
+        "isLeapYear": true,
+        "normalizedDate": "29/02/2020",
+        "message": "29/02/2020 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:R53",
+        "column": "R",
+        "id": "UTCID13",
+        "expectedReturn": "T"
+      },
+      "notes": [],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-14",
+      "title": "CheckDate UTCID14: 30/2/2020 → F",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "30",
+        "month": "2",
+        "year": "2020"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 29,
+        "isLeapYear": true,
+        "normalizedDate": "30/02/2020",
+        "message": "30/02/2020 is NOT correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:S53",
+        "column": "S",
+        "id": "UTCID14",
+        "expectedReturn": "F"
+      },
+      "notes": [
+        "Return F đúng với 30/2/2020; dòng log \"success\" không khớp nhãn input1 is null ở các ca F khác. Không coi log mẫu là thông báo của API."
+      ],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-15",
+      "title": "CheckDate UTCID15: 29/2/2100 → F",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2100"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "invalid_date",
+        "field": null,
+        "isValid": false,
+        "daysInMonth": 28,
+        "isLeapYear": false,
+        "normalizedDate": "29/02/2100",
+        "message": "29/02/2100 is NOT correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:T53",
+        "column": "T",
+        "id": "UTCID15",
+        "expectedReturn": "F"
+      },
+      "notes": [],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-DATE-16",
+      "title": "CheckDate UTCID16: 29/2/2000 → T",
+      "kind": "check",
+      "origin": "student",
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2000"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 29,
+        "isLeapYear": true,
+        "normalizedDate": "29/02/2000",
+        "message": "29/02/2000 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "CheckDate",
+        "range": "D9:U53",
+        "column": "U",
+        "id": "UTCID16",
+        "expectedReturn": "T"
+      },
+      "notes": [],
+      "topics": [
+        "api",
+        "web",
+        "mobile",
+        "performance"
+      ],
+      "duplicateOf": "LAB1-DATE-11"
+    },
+    {
+      "id": "LAB2-MONTH-01",
+      "title": "DayInMonth UTCID01: month=0, year=2020 → 0 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "0",
+        "year": "2020"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Month",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Month is out of range!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:F47",
+        "column": "F",
+        "id": "UTCID01",
+        "expectedReturn": "0"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-MONTH-02",
+      "title": "DayInMonth UTCID02: month=13, year=2020 → 0 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "13",
+        "year": "2020"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Month",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Month is out of range!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:G47",
+        "column": "G",
+        "id": "UTCID02",
+        "expectedReturn": "0"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-MONTH-03",
+      "title": "DayInMonth UTCID03: month=1, year=999 → 0 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "1",
+        "year": "999"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Year",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Year is out of range!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:H47",
+        "column": "H",
+        "id": "UTCID03",
+        "expectedReturn": "0"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-MONTH-04",
+      "title": "DayInMonth UTCID04: month=13, year=3001 → 0 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "13",
+        "year": "3001"
+      },
+      "expected": {
+        "status": 422,
+        "outcome": "validation_error",
+        "field": "Month",
+        "isValid": null,
+        "daysInMonth": null,
+        "isLeapYear": null,
+        "normalizedDate": null,
+        "message": "Input data for Month is out of range!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:I47",
+        "column": "I",
+        "id": "UTCID04",
+        "expectedReturn": "0"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-MONTH-05",
+      "title": "DayInMonth UTCID05: month=1, year=1000 → 31 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "1",
+        "year": "1000"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 31,
+        "isLeapYear": false,
+        "normalizedDate": "01/01/1000",
+        "message": "01/01/1000 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:J47",
+        "column": "J",
+        "id": "UTCID05",
+        "expectedReturn": "31"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-MONTH-06",
+      "title": "DayInMonth UTCID06: month=12, year=3000 → 31 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "12",
+        "year": "3000"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 31,
+        "isLeapYear": false,
+        "normalizedDate": "01/12/3000",
+        "message": "01/12/3000 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:K47",
+        "column": "K",
+        "id": "UTCID06",
+        "expectedReturn": "31"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-MONTH-07",
+      "title": "DayInMonth UTCID07: month=4, year=2021 → 30 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "4",
+        "year": "2021"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 30,
+        "isLeapYear": false,
+        "normalizedDate": "01/04/2021",
+        "message": "01/04/2021 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:L47",
+        "column": "L",
+        "id": "UTCID07",
+        "expectedReturn": "30"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-MONTH-08",
+      "title": "DayInMonth UTCID08: month=2, year=2021 → 28 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "2",
+        "year": "2021"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 28,
+        "isLeapYear": false,
+        "normalizedDate": "01/02/2021",
+        "message": "01/02/2021 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:M47",
+        "column": "M",
+        "id": "UTCID08",
+        "expectedReturn": "28"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-MONTH-09",
+      "title": "DayInMonth UTCID09: month=2, year=2020 → 29 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "2",
+        "year": "2020"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 29,
+        "isLeapYear": true,
+        "normalizedDate": "01/02/2020",
+        "message": "01/02/2020 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:N47",
+        "column": "N",
+        "id": "UTCID09",
+        "expectedReturn": "29"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-MONTH-10",
+      "title": "DayInMonth UTCID10: month=2, year=2100 → 28 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "2",
+        "year": "2100"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 28,
+        "isLeapYear": false,
+        "normalizedDate": "01/02/2100",
+        "message": "01/02/2100 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:O47",
+        "column": "O",
+        "id": "UTCID10",
+        "expectedReturn": "28"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "LAB2-MONTH-11",
+      "title": "DayInMonth UTCID11: month=2, year=2000 → 29 ngày",
+      "kind": "days-in-month",
+      "origin": "student",
+      "input": {
+        "day": "1",
+        "month": "2",
+        "year": "2000"
+      },
+      "expected": {
+        "status": 200,
+        "outcome": "valid_date",
+        "field": null,
+        "isValid": true,
+        "daysInMonth": 29,
+        "isLeapYear": true,
+        "normalizedDate": "01/02/2000",
+        "message": "01/02/2000 is correct date time!"
+      },
+      "source": {
+        "file": "Lab2_PhamTuanTrien.xlsx",
+        "sheet": "DayInMonth",
+        "range": "D9:P47",
+        "column": "P",
+        "id": "UTCID11",
+        "expectedReturn": "29"
+      },
+      "notes": [
+        "Không gọi trực tiếp hàm: POST API với day=1, kiểm tra daysInMonth. Return=0 ở Lab được ánh xạ thành HTTP 422 và daysInMonth=null theo hợp đồng API; web/mobile không hiển thị số ngày của tháng nên không gán case này cho UI."
+      ],
+      "topics": [
+        "api",
+        "performance"
+      ]
+    },
+    {
+      "id": "SUP-CLEAR",
+      "title": "Clear xóa cả ba ô",
+      "kind": "clear",
+      "origin": "supplement",
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2000"
+      },
+      "source": {
+        "file": "ProjectIntroduction.docx",
+        "sheet": "Requirement",
+        "range": "Clear / Close"
+      },
+      "topics": [
+        "web",
+        "mobile"
+      ],
+      "notes": [
+        "Bổ sung từ requirement vì hai Lab chưa có case kiểm tra hành vi này."
+      ]
+    },
+    {
+      "id": "SUP-CLOSE-NO",
+      "title": "No giữ app và dữ liệu",
+      "kind": "close-no",
+      "origin": "supplement",
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2000"
+      },
+      "source": {
+        "file": "ProjectIntroduction.docx",
+        "sheet": "Requirement",
+        "range": "Clear / Close"
+      },
+      "topics": [
+        "web",
+        "mobile"
+      ],
+      "notes": [
+        "Bổ sung từ requirement vì hai Lab chưa có case kiểm tra hành vi này."
+      ]
+    },
+    {
+      "id": "SUP-CLOSE-YES",
+      "title": "Yes yêu cầu đóng ứng dụng",
+      "kind": "close-yes",
+      "origin": "supplement",
+      "input": {
+        "day": "29",
+        "month": "2",
+        "year": "2000"
+      },
+      "source": {
+        "file": "ProjectIntroduction.docx",
+        "sheet": "Requirement",
+        "range": "Clear / Close"
+      },
+      "topics": [
+        "web",
+        "mobile"
+      ],
+      "notes": [
+        "Bổ sung từ requirement vì hai Lab chưa có case kiểm tra hành vi này."
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "source": "Lab2_PhamTuanTrien.xlsx / DayInMonth / Q9:Q49",
+      "id": "UTCID12",
+      "decision": "Không chạy: cột không chọn đủ input và expected return."
+    },
+    {
+      "source": "Lab2_PhamTuanTrien.xlsx / DayInMonth / R9:R49",
+      "id": "UTCID13",
+      "decision": "Không chạy: cột không chọn đủ input và expected return."
+    },
+    {
+      "source": "Lab2_PhamTuanTrien.xlsx / DayInMonth / S9:S49",
+      "id": "UTCID14",
+      "decision": "Không chạy: cột không chọn đủ input và expected return."
+    },
+    {
+      "source": "Lab2_PhamTuanTrien.xlsx / DayInMonth / T9:T49",
+      "id": "UTCID15",
+      "decision": "Không chạy: cột không chọn đủ input và expected return."
+    },
+    {
+      "source": "Lab2 / Function3",
+      "decision": "Mẫu Input1/Input2 không có dấu chọn dữ liệu; không có nghiệp vụ ngày tháng. Không tạo test từ các header UTCID còn lại."
+    },
+    {
+      "source": "Lab2 / Example",
+      "decision": "Ví dụ phương trình a,b,c, không thuộc Date Time Checker."
+    },
+    {
+      "source": "Lab1 / các dòng A10:D10",
+      "decision": "Dòng ví dụ Company/Staff là mẫu, không phải case của dự án."
+    },
+    {
+      "source": "Lab1 / Test Report, Lab2 / ngày chạy và Defect ID",
+      "decision": "Số tổng và trạng thái P/F có dấu vết mẫu, không sử dụng làm bằng chứng đã chạy test."
+    },
+    {
+      "source": "GUI mobile / Arial và Close X",
+      "decision": "Arial có thể fallback trên Android. Bộ test ghi nhận hạn chế font; bổ sung nút X vào dialog Flutter để đáp ứng case GUI của Lab1."
+    }
+  ]
+}

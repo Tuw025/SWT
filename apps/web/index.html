@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <title>Date Time Checker</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="workspace">
+    <section class="window" aria-labelledby="app-title" data-testid="application">
+      <header class="titlebar">
+        <span><span class="app-icon" aria-hidden="true">▦</span> Date Time Checker</span>
+        <button class="close-button" type="button" aria-label="Close application" data-testid="close-button">×</button>
+      </header>
+      <div class="window-body">
+        <img class="university-logo" src="assets/fpt-logo.png" alt="FPT University — Dream of Innovation" width="174" height="57">
+        <h1 id="app-title">Date Time Checker</h1>
+        <p class="intro">Enter a date to check whether it exists.</p>
+        <form id="date-form" novalidate autocomplete="off">
+          <div class="field"><label for="day">Day</label><div class="field-input"><input id="day" name="day" type="text" inputmode="numeric" aria-describedby="day-hint" data-testid="day-input"><span id="day-hint" class="hint">1–31</span></div></div>
+          <div class="field"><label for="month">Month</label><div class="field-input"><input id="month" name="month" type="text" inputmode="numeric" aria-describedby="month-hint" data-testid="month-input"><span id="month-hint" class="hint">1–12</span></div></div>
+          <div class="field"><label for="year">Year</label><div class="field-input"><input id="year" name="year" type="text" inputmode="numeric" aria-describedby="year-hint" data-testid="year-input"><span id="year-hint" class="hint">1000–3000</span></div></div>
+          <div class="actions"><button id="clear-button" class="button secondary" type="button" data-testid="clear-button">Clear</button><button id="check-button" class="button primary" type="submit" data-testid="check-button">Check</button></div>
+        </form>
+        <p class="footnote">Gregorian calendar · Day / Month / Year</p>
+      </div>
+    </section>
+    <section id="closed-screen" class="closed-screen" hidden aria-labelledby="closed-title" data-testid="closed-screen">
+      <div class="closed-icon" aria-hidden="true">✓</div><h1 id="closed-title">Application closed</h1><p>You can open the checker again.</p><button id="reopen-button" class="button primary" type="button">Open checker</button>
+    </section>
+  </main>
+  <dialog id="message-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-message" data-testid="message-dialog">
+    <div class="dialog-header"><h2 id="dialog-title">Message</h2><button id="dialog-close" class="dialog-close" type="button" aria-label="Close message">×</button></div>
+    <div class="dialog-content"><span id="dialog-icon" class="message-icon" aria-hidden="true">i</span><p id="dialog-message" data-testid="dialog-message"></p></div>
+    <div class="dialog-actions"><button id="dialog-no" class="button secondary" type="button" hidden>No</button><button id="dialog-yes" class="button primary" type="button" hidden>Yes</button><button id="dialog-ok" class="button primary" type="button">OK</button></div>
+  </dialog>
+</body>
+</html>

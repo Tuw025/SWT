@@ -1,0 +1,143 @@
+[
+  {
+    "id": "DTC-001",
+    "day": "29",
+    "month": "2",
+    "year": "2000",
+    "status": 200,
+    "outcome": "valid_date",
+    "isValid": true,
+    "normalizedDate": "29/02/2000",
+    "daysInMonth": 29,
+    "isLeapYear": true,
+    "message": "29/02/2000 is correct date time!"
+  },
+  {
+    "id": "DTC-002",
+    "day": "29",
+    "month": "2",
+    "year": "1900",
+    "status": 200,
+    "outcome": "invalid_date",
+    "isValid": false,
+    "normalizedDate": "29/02/1900",
+    "daysInMonth": 28,
+    "isLeapYear": false,
+    "message": "29/02/1900 is NOT correct date time!"
+  },
+  {
+    "id": "DTC-003",
+    "day": "29",
+    "month": "2",
+    "year": "2024",
+    "status": 200,
+    "outcome": "valid_date",
+    "isValid": true,
+    "normalizedDate": "29/02/2024",
+    "daysInMonth": 29,
+    "isLeapYear": true,
+    "message": "29/02/2024 is correct date time!"
+  },
+  {
+    "id": "DTC-004",
+    "day": "29",
+    "month": "2",
+    "year": "2023",
+    "status": 200,
+    "outcome": "invalid_date",
+    "isValid": false,
+    "normalizedDate": "29/02/2023",
+    "daysInMonth": 28,
+    "isLeapYear": false,
+    "message": "29/02/2023 is NOT correct date time!"
+  },
+  {
+    "id": "DTC-005",
+    "day": "31",
+    "month": "4",
+    "year": "2024",
+    "status": 200,
+    "outcome": "invalid_date",
+    "isValid": false,
+    "normalizedDate": "31/04/2024",
+    "daysInMonth": 30,
+    "isLeapYear": true,
+    "message": "31/04/2024 is NOT correct date time!"
+  },
+  {
+    "id": "DTC-006",
+    "day": "31",
+    "month": "12",
+    "year": "3000",
+    "status": 200,
+    "outcome": "valid_date",
+    "isValid": true,
+    "normalizedDate": "31/12/3000",
+    "daysInMonth": 31,
+    "isLeapYear": false,
+    "message": "31/12/3000 is correct date time!"
+  },
+  {
+    "id": "DTC-007",
+    "day": "1",
+    "month": "1",
+    "year": "1000",
+    "status": 200,
+    "outcome": "valid_date",
+    "isValid": true,
+    "normalizedDate": "01/01/1000",
+    "daysInMonth": 31,
+    "isLeapYear": false,
+    "message": "01/01/1000 is correct date time!"
+  },
+  {
+    "id": "DTC-008",
+    "day": "abc",
+    "month": "1",
+    "year": "2024",
+    "status": 422,
+    "outcome": "validation_error",
+    "field": "Day",
+    "message": "Input data for Day is incorrect format!"
+  },
+  {
+    "id": "DTC-009",
+    "day": "0",
+    "month": "1",
+    "year": "2024",
+    "status": 422,
+    "outcome": "validation_error",
+    "field": "Day",
+    "message": "Input data for Day is out of range!"
+  },
+  {
+    "id": "DTC-010",
+    "day": "1",
+    "month": "13",
+    "year": "2024",
+    "status": 422,
+    "outcome": "validation_error",
+    "field": "Month",
+    "message": "Input data for Month is out of range!"
+  },
+  {
+    "id": "DTC-011",
+    "day": "1",
+    "month": "1",
+    "year": "999",
+    "status": 422,
+    "outcome": "validation_error",
+    "field": "Year",
+    "message": "Input data for Year is out of range!"
+  },
+  {
+    "id": "DTC-012",
+    "day": "",
+    "month": "",
+    "year": "",
+    "status": 422,
+    "outcome": "validation_error",
+    "field": "Day",
+    "message": "Input data for Day is incorrect format!"
+  }
+]
