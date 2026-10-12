@@ -31,6 +31,7 @@ public sealed class DateChecker
     // Explicit branches preserve the algorithm in the supplied flowchart.
     private static bool IsLeapYear(int year)
     {
+        // Gregorian leap-year rule: years divisible by 400 are leap years.
         if (year % 400 == 0) return true;
         if (year % 100 == 0) return false;
         return year % 4 == 0;
