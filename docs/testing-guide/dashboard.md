@@ -67,8 +67,9 @@ nhập, không có artifact hoặc artifact hết hạn. Báo cáo đã tải v�
 Các workflow cũ trước bản cập nhật chưa có artifact dashboard nên chỉ hiện thông
 tin lượt chạy và liên kết Actions, không bịa kết quả Allure từ log cũ.
 
-Mặc định đồng bộ 15 workflow gần nhất, tối đa 3 báo cáo mới mỗi đợt; đợt kiểm tra
-cách nhau tối thiểu 20 giây, kiểm tra nền mỗi 60 giây. Nguồn mặc định Tuw025/SWT.
+Mặc định đồng bộ 15 workflow gần nhất, tối đa 3 báo cáo mới mỗi đợt; kiểm tra nền
+mỗi 60 giây. F5 hoặc nút Tải lại kết quả yêu cầu kiểm tra mới ngay; khi đã có một
+đợt đồng bộ đang chạy thì dùng chung đợt đó. Nguồn mặc định Tuw025/SWT.
 Đổi repository bằng DASHBOARD_REPOSITORY, port bằng DASHBOARD_PORT khi cần.
 Không cần cấu hình Pages để xem cả hai nguồn trên cùng dashboard local.
 

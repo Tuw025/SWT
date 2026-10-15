@@ -29,14 +29,14 @@ function render(){
     ${(run.notes||[]).length?`<h3>Phạm vi và giới hạn</h3><ul class="notes">${run.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul>`:''}`;
 }
 let polling;
-async function load(){
+async function load(refresh=true){
   $('refresh').disabled=true;
   try{
-    const response=await fetch('/api/dashboard',{cache:'no-store'});if(!response.ok)throw new Error('Không đọc được dashboard.');model=await response.json();
+    const response=await fetch('/api/dashboard'+(refresh?'?refresh=1':''),{cache:'no-store'});if(!response.ok)throw new Error('Không đọc được dashboard.');model=await response.json();
     const sync=model.sync;
     $('sync').textContent=`GitHub ${model.repository}: ${sync.syncing?'đang đồng bộ…':sync.error||`lần kiểm tra thành công gần nhất ${date(sync.lastSuccess)}`}. Kết quả Local vẫn xem được khi GitHub mất kết nối.`;
-    render();clearTimeout(polling);if(sync.syncing)polling=setTimeout(load,2500);
+    render();clearTimeout(polling);if(sync.syncing)polling=setTimeout(()=>load(false),2500);
   }catch(error){$('sync').textContent=error.message+' Kiểm tra terminal chạy npm.cmd run dashboard.';}
   finally{$('refresh').disabled=false;}
 }
-$('refresh').onclick=load;$('source').onchange=render;load();
+$('refresh').onclick=()=>load(true);$('source').onchange=render;load();

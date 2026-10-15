@@ -31,9 +31,9 @@ const server=http.createServer((req,res)=>{
   // Loopback only, reject unexpected Host and cross-origin browser requests.
   if(![`127.0.0.1:${port}`,`localhost:${port}`].includes(req.headers.host)||req.headers.origin&&!['http://127.0.0.1:'+port,'http://localhost:'+port].includes(req.headers.origin)){res.writeHead(403);return res.end();}
   if(!['GET','HEAD'].includes(req.method)){res.writeHead(405);return res.end();}
-  let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{res.writeHead(400);return res.end();}
+  let pathname,url;try{url=new URL(req.url,'http://localhost');pathname=decodeURIComponent(url.pathname);}catch{res.writeHead(400);return res.end();}
   if(pathname==='/api/dashboard'){
-    github.synchronize().catch(()=>{});
+    if(url.searchParams.get('refresh')==='1')github.synchronize(true).catch(()=>{});
     res.writeHead(200,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});return res.end(JSON.stringify(data()));
   }
   if(pathname==='/')return serve(res,path.join(__dirname,'index.html'),__dirname);
