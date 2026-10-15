@@ -81,6 +81,8 @@ Không cần cấu hình Pages để xem cả hai nguồn trên cùng dashboard 
 - SKIP: không chạy, ví dụ Mobile không bật hoặc AI chưa có case được duyệt.
 - Số case là số lần thực thi theo nhóm, không phải số yêu cầu nghiệp vụ độc lập.
 - k6 request và threshold là số liệu riêng, không cộng thành case API/Web.
+- Trong Allure, các threshold k6 là các mục kiểm tra riêng; tổng mục ở Allure có
+  thể lớn hơn tổng case Lab hiển thị trên dashboard. Xem suite Ngưỡng hiệu năng.
 - Profile observe không đánh giá chịu tải; API p95 không thay cho R14 UI.
 - Local có thay đổi chưa commit được đánh dấu. Pipeline chỉ kiểm tra commit đã push.
 - Lượt bị hủy hoàn toàn có thể không kịp tạo artifact; dashboard giữ trạng thái hủy.
