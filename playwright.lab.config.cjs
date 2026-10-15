@@ -2,7 +2,7 @@ const base=require('./playwright.config.cjs');
 const {defineConfig,devices}=require('@playwright/test');
 const reportLabel=process.env.LAB_REPORT_LABEL||process.env.LAB_TOPIC||'all';
 if(!/^[a-z-]+$/.test(reportLabel))throw new Error('Report label must contain lowercase letters and hyphens.');
-const reportRoot=`reports/labs/${reportLabel}`;
+const reportRoot=require('node:path').join(process.env.LAB_OUTPUT_DIR||'reports/labs',reportLabel);
 module.exports=defineConfig({...base,
   testMatch:'**/*.lab.cjs',
   outputDir:`${reportRoot}/artifacts`,

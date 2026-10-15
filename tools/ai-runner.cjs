@@ -10,7 +10,8 @@ while (args.length) {
   if (!['--case','--mode','--target','--base-url'].includes(flag) || !args.length) throw new Error(`Tham số không hợp lệ: ${flag}`);
   opts[flag.slice(2)] = args.shift();
 }
-const reportRoot = path.join(root,'reports','labs','ai-assisted');
+function reportDirectory(){return path.join(process.env.LAB_OUTPUT_DIR||path.join(root,'reports','labs'),'ai-assisted');}
+let reportRoot=reportDirectory();
 function duplicates(c) { return catalog.cases.filter(x => x.input && ['day','month','year'].every(k=>x.input[k]===c.input[k])).map(x => x.id); }
 function show(c) {
   console.log(`\n${c.id}: ${c.title}\nRequirement: ${c.requirementIds.join(', ')}\nAI giải thích: ${c.rationale}`);
@@ -57,7 +58,7 @@ function context() {
   const destination = path.join(reportRoot,'context.md'); fs.writeFileSync(destination,content);
   console.log(`Đã tạo ngữ cảnh và prompt: ${destination}\nDùng nội dung này trong cuộc trò chuyện Codex. Lệnh này không gọi dịch vụ AI.`);
 }
-async function run() {
+async function runTests() {
   const cases = selectApproved(opts.case);
   const target = opts.target || 'web', mode = opts.mode || (target==='api'?'step':'step');
   if (!['api','web'].includes(target) || !['run','watch','step'].includes(mode)) throw new Error('target: api/web; mode: run/watch/step.');
@@ -81,6 +82,13 @@ async function run() {
   const argv=[path.join(root,'node_modules/@playwright/test/cli.js'),'test','--config=playwright.lab.config.cjs',`--project=lab-ai-${target}`];
   if (mode==='watch') argv.push('--headed'); if (mode==='step') argv.push('--debug');
   return spawnTest(argv,{...process.env,AI_CASE:cases.map(c=>c.id).join(','),LAB_MODE:mode,LAB_STRICT_SOURCE:'0',LAB_REPORT_LABEL:`ai-${target}`,TEST_BASE_URL:baseURL,USE_EXTERNAL_SERVER:'1'});
+}
+async function run() {
+  const {launch,metaFor}=require('./reporting/launch.cjs');
+  return launch(metaFor('ai',opts),async()=>{
+    reportRoot=reportDirectory();fs.mkdirSync(reportRoot,{recursive:true});
+    return runTests();
+  });
 }
 async function main() {
   fs.mkdirSync(reportRoot,{recursive:true});

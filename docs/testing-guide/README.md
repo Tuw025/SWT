@@ -16,7 +16,7 @@ Bộ này dùng test case từ hai bài Lab của sinh viên, chọn và chạy 
 | Quan sát request, đo UI, chạy load hoặc stress | [Performance testing](performance-testing.md) |
 | Giải thích integration khi không có database | [Integration trong dự án](integration-explained.md) |
 | Nhờ AI đề xuất, duyệt và chạy case bổ sung | [AI-assisted testing](ai-assisted-testing.md) |
-| Chạy pipeline local, GitHub Actions và delivery ZIP | [CI/CD testing](ci-cd-testing.md) |
+| Chạy GitHub Actions và xem delivery ZIP | [CI/CD testing](ci-cd-testing.md) |
 | Truy nguồn và hiểu các điều chỉnh expected | [Thiết kế và đối chiếu hai Lab](../test-plan/lab-design.md) |
 
 ## Quy trình chạy chung
@@ -60,8 +60,13 @@ Theo catalog hiện tại: 47 case API, 44 web, 44 mobile, 5 visual; performance
 
 Trong dự án vẫn có các lệnh `test:*`, `npm.cmd test` và cấu hình `playwright.config.cjs` của bộ regression ban đầu. Các tài liệu ở đây dùng bộ Lab mới: `lab:*`, `playwright.lab.config.cjs`, case `LAB1-*`, `LAB2-*`, `SUP-*` và kết quả trong `D:\Ki5\SWT\project\reports\labs`.
 
-AI-assisted và pipeline CI/CD cho bộ Lab mới để giai đoạn sau. Workflow cũ đang có trong dự án chưa được đổi thành pipeline của bộ này. Không tạo bộ unit test hoặc database.
+AI-assisted và pipeline CI/CD đã dùng bộ Lab hiện tại. Không tạo bộ unit test hoặc database.
 
 ## AI-assisted và CI/CD
 
-Đã bổ sung menu mục 6 và 7. AI cần duyệt đề xuất trước khi chạy; CI quản lý backend riêng và ghi bằng chứng, chưa triển khai server. Xem hai tài liệu trong bảng trên.
+Menu có 6 mục; mục 6 là AI-assisted và cần duyệt đề xuất trước khi chạy. CI/CD chạy trên GitHub Actions khi push/PR hoặc chọn Run workflow, quản lý backend và lưu bằng chứng. CD tạo gói backend/web, chưa triển khai server. Xem hai tài liệu trong bảng trên.
+
+
+## Dashboard Local và GitHub
+
+Xem [hướng dẫn dashboard](dashboard.md). Mở riêng bằng `npm.cmd run dashboard` tại http://127.0.0.1:5099. Runner Lab tự tạo báo cáo sau mỗi lượt; pipeline tự tạo artifact để dashboard đồng bộ. Backend vẫn mở riêng bằng start.ps1.

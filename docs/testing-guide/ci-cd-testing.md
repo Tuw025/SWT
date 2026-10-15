@@ -30,19 +30,27 @@ UI timing trên runner dùng chung có thể nhiễu; cần điều tra FAIL và
 k6 p95 <1000ms là mục tiêu API học tập, không thay cho R14 UI.
 Mobile Close Yes xác minh platform-channel, chưa chứng minh OS đóng Activity.
 
-## 1. Thử pipeline local
+## 1. Chạy CI/CD qua GitHub
 
-Không cần tự mở backend. Pipeline mở/dừng backend riêng ở 5097; có thể giữ backend
-học tập ở 5080 chạy. Cần Chromium và k6 như các buổi học trước.
+Menu thực hành chỉ có 6 mục. CI/CD chạy qua GitHub Actions khi push/PR hoặc chọn
+Run workflow. Commit tại máy chưa kích hoạt CI; nhiều commit được push cùng một
+lần sẽ kích hoạt một lượt cho bản code mới nhất. GitHub tự mở backend và chuẩn
+bị công cụ; không cần giữ backend/emulator tại máy bạn cho lượt cloud.
 
 ```powershell
 cd "D:\Ki5\SWT\project"
-npm.cmd run ci:local
+git status
 ```
 
-Chạy API → Web → Visual → UI timing → AI đã duyệt → k6 observe, không dừng chờ Enter.
-Xem reports/ci/<topic>/result.json, commands.log, backend.log và report Lab.
-Menu chung mục 7 cũng chạy lệnh này. Mobile local chạy riêng, cần mở emulator:
+Để thực hành: sửa một file, commit/push thay đổi đó rồi mở Actions để xem lượt
+chạy. Để chạy Mobile hoặc chọn load/stress, dùng Run workflow như mục 4 bên dưới.
+Mỗi lượt lưu reports/ci/<topic>/result.json, commands.log, backend.log và report Lab.
+
+### Công cụ local tùy chọn
+
+Các script ci:local và ci:topic vẫn có thể dùng trực tiếp để kiểm tra môi trường
+tại máy trước khi push. Chúng không kích hoạt GitHub Actions và không có mục trong
+menu. Mobile local cần mở emulator:
 
 ```powershell
 npm.cmd run ci:topic -- mobile --device emulator-5554
@@ -84,15 +92,14 @@ Repo đã có README/commit: clone vào thư mục mới, copy source vào gốc
 1. Repo → Actions → Student Lab CI and delivery → chọn lượt chạy.
 2. Mở từng job và bước chạy test: xem ID case, PASS/FAIL.
 3. Summary có kết quả nhóm; AI chưa duyệt ghi SKIP, không coi là PASS.
-4. Tải artifact lab-api/lab-web/lab-visual… ở cuối trang và giải nén.
-5. Giữ nguyên thư mục report Playwright; mở bằng npx playwright show-report:
+4. Chờ job Aggregate Allure dashboard report tạo artifact swt-dashboard-<run-id>-<attempt>.
+5. Mở dashboard local bằng npm.cmd run dashboard rồi F5; chọn lượt GitHub để xem
+   tổng kết và bấm Mở Allure Report. Không cần tải/generate thủ công.
 
-```powershell
-npx.cmd playwright show-report "C:\duong-dan-da-giai-nen\reports\labs\web\playwright"
-```
-
-Thay đường dẫn mẫu bằng vị trí thực tế. Chọn case để xem steps, expected/actual,
-ảnh, trace. Mobile có JSON và log từng bước; chưa có video tự động.
+Artifact lab-api/lab-web/lab-visual… vẫn giữ dữ liệu gốc, nay nằm dưới
+<launch-id>/evidence/labs/. Artifact swt-dashboard chứa bản tổng hợp và report HTML.
+Mobile có JSON và log từng bước; chưa có video tự động. Xem [dashboard.md](dashboard.md)
+để biết điều kiện đăng nhập GitHub CLI và xử lý lỗi đồng bộ.
 
 ## 4. Chạy Mobile hoặc load/stress
 
@@ -135,3 +142,8 @@ commit/push và quan sát chạy lại. Không merge expected sai vào nhánh ch
 
 Nguồn: [GitHub: trigger](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow),
 [GitHub: artifact](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflow-artifacts).
+
+
+## Dashboard Local và GitHub
+
+Xem [hướng dẫn dashboard](dashboard.md). Mở riêng bằng `npm.cmd run dashboard` tại http://127.0.0.1:5099. Runner Lab tự tạo báo cáo sau mỗi lượt; pipeline tự tạo artifact để dashboard đồng bộ. Backend vẫn mở riêng bằng start.ps1.

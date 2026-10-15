@@ -52,8 +52,7 @@ jobs:
         with:
           name: lab-${{ matrix.topic }}-${{ github.run_attempt }}
           path: |
-            reports/labs/
-            reports/ci/
+            reports/dashboard/jobs/
           retention-days: 14
 
   performance:
@@ -84,8 +83,7 @@ jobs:
         with:
           name: lab-performance-${{ github.run_attempt }}
           path: |
-            reports/labs/
-            reports/ci/
+            reports/dashboard/jobs/
           retention-days: 14
 
   mobile:
@@ -142,8 +140,7 @@ jobs:
         with:
           name: lab-mobile-${{ github.run_attempt }}
           path: |
-            reports/labs/
-            reports/ci/
+            reports/dashboard/jobs/
           retention-days: 14
 
   delivery:
@@ -170,4 +167,36 @@ jobs:
         with:
           name: date-time-checker-${{ github.run_number }}
           path: delivery/date-time-checker.zip
+          retention-days: 14
+
+  report:
+    name: Aggregate Allure dashboard report
+    needs: [independent-tests, performance, mobile, delivery]
+    if: ${{ always() && !cancelled() }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Collect available results, including failed test jobs
+        uses: actions/download-artifact@v7
+        with:
+          pattern: lab-*
+          path: reports/dashboard-input
+      - name: Generate a report for this workflow run
+        if: ${{ !cancelled() }}
+        env:
+          DASHBOARD_NEEDS: ${{ toJSON(needs) }}
+        run: node ci/report-dashboard.cjs
+      - name: Save dashboard bundle for automatic local synchronization
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: swt-dashboard-${{ github.run_id }}-${{ github.run_attempt }}
+          path: reports/dashboard-bundle/
+          if-no-files-found: error
           retention-days: 14

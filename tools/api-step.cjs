@@ -17,7 +17,7 @@ const records=[];
       assertResponse(c,response.status,actual);record.result='PASS';console.log('PASS: HTTP và tất cả trường JSON khớp expected.');
     }catch(error){record.result='FAIL';record.error=error.message;process.exitCode=1;console.error(error.message);}
     records.push(record);
-    fs.writeFileSync(path.join(__dirname,'..','reports','labs','api-step.json'),JSON.stringify(records,null,2));
+    fs.writeFileSync(path.join(process.env.LAB_OUTPUT_DIR||path.join(__dirname,'..','reports','labs'),'api-step.json'),JSON.stringify(records,null,2));
     await input.question('Nhấn Enter để kết thúc case / sang case tiếp theo: ');
   }
 })().catch(error=>{console.error(error);process.exitCode=1;}).finally(()=>input.close());

@@ -20,9 +20,9 @@ cd "D:\Ki5\SWT\project"
 npm.cmd run lab:menu
 ```
 
-Menu gồm API, Web E2E, Mobile E2E, Visual, Performance, AI-assisted và CI/CD local.
+Menu gồm 6 mục: API, Web E2E, Mobile E2E, Visual, Performance và AI-assisted.
 Mở emulator trước nếu test Mobile. Các runner Lab/AI cần backend ở 5080;
-pipeline CI tự build/mở/dừng backend riêng ở 5097. Không cần chạy flutter run
+CI/CD chạy trên GitHub Actions khi push/PR hoặc chọn Run workflow. Không cần chạy flutter run
 thủ công để bộ test tự thao tác. Web cùng backend tại http://127.0.0.1:5080.
 
 ## Hướng dẫn
@@ -34,7 +34,7 @@ thủ công để bộ test tự thao tác. Web cùng backend tại http://127.0
 - [Visual](docs/testing-guide/visual-testing.md)
 - [Performance](docs/testing-guide/performance-testing.md)
 - [AI-assisted: đề xuất → duyệt → chạy → đọc kết quả](docs/testing-guide/ai-assisted-testing.md)
-- [CI/CD: local → GitHub Actions → delivery ZIP](docs/testing-guide/ci-cd-testing.md)
+- [CI/CD: GitHub Actions → delivery ZIP](docs/testing-guide/ci-cd-testing.md)
 - [Đối chiếu các case Lab](docs/test-plan/lab-design.md)
 
 ## Nội dung các thư mục
@@ -63,3 +63,8 @@ playwright.lab.config.cjs và student.lab.cjs. CI mới gọi đúng bộ Lab.
 AI-assisted không gọi AI lại khi chạy test đã sinh; đề xuất pending cần bạn duyệt.
 CD chỉ tạo ZIP backend/web, chưa triển khai server. Lượt GitHub thật cần xác minh
 tại Actions sau khi source được đưa lên https://github.com/Tuw025/SWT.
+
+
+## Dashboard Local và GitHub
+
+Xem [hướng dẫn dashboard](docs/testing-guide/dashboard.md). Mở riêng bằng `npm.cmd run dashboard` tại http://127.0.0.1:5099. Runner Lab tự tạo báo cáo sau mỗi lượt; pipeline tự tạo artifact để dashboard đồng bộ. Backend vẫn mở riêng bằng start.ps1.

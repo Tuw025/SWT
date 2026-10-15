@@ -28,5 +28,5 @@ export default function(){
 export function handleSummary(data){
   const m=data.metrics;
   const thresholdResults=Object.fromEntries(Object.entries(m).flatMap(([name,v])=>Object.entries(v.thresholds||{}).map(([rule,r])=>[`${name}: ${rule}`,r.ok])));
-  return {[`reports/labs/performance-${profile}.json`]:JSON.stringify({profile,caseIds:cases.map(c=>c.id),thresholdResults,...data},null,2),stdout:`\n${profile}: ${m.http_reqs.values.count} requests; checks=${(m.checks.values.rate*100).toFixed(1)}%; p95=${m.http_req_duration.values['p(95)'].toFixed(2)}ms\n${JSON.stringify(thresholdResults)}\nNgưỡng tải là mục tiêu thực hành; requirement R14 phải đo từ UI riêng.\n`};
+  return {[`${__ENV.LAB_OUTPUT_DIR||'reports/labs'}/performance-${profile}.json`]:JSON.stringify({profile,caseIds:cases.map(c=>c.id),thresholdResults,...data},null,2),stdout:`\n${profile}: ${m.http_reqs.values.count} requests; checks=${(m.checks.values.rate*100).toFixed(1)}%; p95=${m.http_req_duration.values['p(95)'].toFixed(2)}ms\n${JSON.stringify(thresholdResults)}\nNgưỡng tải là mục tiêu thực hành; requirement R14 phải đo từ UI riêng.\n`};
 }

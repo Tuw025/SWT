@@ -136,5 +136,9 @@ Khi kết thúc thực hành, Ctrl+C trong cửa sổ backend sẽ dừng backen
 ## Hai chủ đề bổ sung
 
 Menu mục 6: [AI-assisted](ai-assisted-testing.md), xem/duyệt/chạy case AI.
-Menu mục 7: [CI/CD local](ci-cd-testing.md), tự mở backend riêng ở 5097 và chạy không tương tác.
-CI local không yêu cầu backend học tập 5080 đã mở; các bài Lab độc lập vẫn yêu cầu.
+[CI/CD](ci-cd-testing.md) chạy qua GitHub Actions khi push/PR hoặc chọn Run workflow, không nằm trong menu. GitHub tự chuẩn bị backend; các bài Lab chạy tại máy vẫn cần backend ở 5080.
+
+
+## Dashboard Local và GitHub
+
+Xem [hướng dẫn dashboard](dashboard.md). Mở riêng bằng `npm.cmd run dashboard` tại http://127.0.0.1:5099. Runner Lab tự tạo báo cáo sau mỗi lượt; pipeline tự tạo artifact để dashboard đồng bộ. Backend vẫn mở riêng bằng start.ps1.

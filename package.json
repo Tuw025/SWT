@@ -29,9 +29,13 @@
     "lab:menu": "node tools/lab-menu.cjs",
     "lab:ai": "node tools/ai-runner.cjs",
     "ci:local": "node ci/run-pipeline.cjs",
-    "ci:topic": "node ci/run-topic.cjs"
+    "ci:topic": "node ci/run-topic.cjs",
+    "dashboard": "node tools/dashboard/server.cjs",
+    "dashboard:check": "node tools/reporting/verify.cjs"
   },
   "devDependencies": {
-    "@playwright/test": "1.62.1"
+    "@playwright/test": "1.62.1",
+    "allure": "3.20.1",
+    "fflate": "0.8.2"
   }
 }
