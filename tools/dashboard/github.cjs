@@ -9,7 +9,7 @@ const cache=path.join(storage,'github'),stateFile=path.join(storage,'github-inde
 const state={...read(stateFile,{runs:[]}),syncing:false,error:null};
 let task,lastAttempt=0;
 function gh(args,binary=false){
-  return new Promise((resolve,reject)=>execFile('gh',args,{encoding:binary?'buffer':'utf8',maxBuffer:100*1024*1024,timeout:60000,windowsHide:true},(error,stdout)=>{
+  return new Promise((resolve,reject)=>execFile('gh',args,{encoding:binary?'buffer':'utf8',maxBuffer:400*1024*1024,timeout:180000,windowsHide:true},(error,stdout)=>{
     if(error)return reject(new Error('Không truy cập được GitHub qua gh. Kiểm tra Internet và chạy gh auth status trong terminal mở dashboard. Nếu cần, đăng nhập bằng gh auth login.'));
     try{resolve(binary?stdout:JSON.parse(stdout));}catch{reject(new Error('GitHub trả dữ liệu không hợp lệ.'));}
   }));
@@ -25,11 +25,13 @@ async function api(endpoint){
 function extract(buffer,destination,expectedId){
   let size=0,entries=0;
   const files=unzipSync(buffer,{filter:entry=>{
-    entries++;size+=entry.originalSize;
-    if(entries>25000||size>300*1024*1024)throw new Error('Báo cáo vượt giới hạn giải nén.');
+    entries++;
     const name=entry.name;
     if(name.includes('\\')||name.startsWith('/')||name.split('/').some(s=>s==='..'||s==='.')||name.includes(':'))throw new Error('Đường dẫn trong gói báo cáo không hợp lệ.');
-    return !name.endsWith('/');
+    const wanted=/^(summary\.json|records\.json|report-generation\.log|report\/.*)$/.test(name)&&!name.endsWith('/');
+    if(wanted)size+=entry.originalSize;
+    if(entries>25000||size>300*1024*1024)throw new Error('Báo cáo vượt giới hạn giải nén.');
+    return wanted;
   }});
   const summary=files['summary.json']&&JSON.parse(Buffer.from(files['summary.json']).toString('utf8'));
   if(summary?.id!==expectedId||summary.source!=='github'||!Array.isArray(summary.groups))throw new Error('Gói báo cáo không khớp lượt GitHub.');
@@ -57,7 +59,7 @@ async function synchronize(force=false){
         const artifact=artifacts.artifacts?.find(a=>a.name===`swt-dashboard-${run.runId}-${run.attempt}`);
         if(!artifact){run.syncNote='Lượt này chưa có gói dashboard (có thể chạy trước bản cập nhật hoặc bước tạo báo cáo chưa hoàn tất).';continue;}
         if(artifact.expired){run.syncNote='Artifact đã hết hạn; bản đã tải trước đó vẫn xem được.';continue;}
-        if(artifact.size_in_bytes>100*1024*1024){run.syncNote='Gói báo cáo lớn hơn 100 MB; xem Artifacts trên GitHub.';continue;}
+        if(artifact.size_in_bytes>400*1024*1024){run.syncNote='Gói báo cáo lớn hơn 400 MB; xem Artifacts trên GitHub.';continue;}
         try{
           const buffer=await gh(['api',`repos/${repo}/actions/artifacts/${artifact.id}/zip`],true);
           const stage=path.join(cache,`.download-${run.id}`);

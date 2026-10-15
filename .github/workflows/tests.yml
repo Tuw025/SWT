@@ -197,6 +197,10 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: swt-dashboard-${{ github.run_id }}-${{ github.run_attempt }}
-          path: reports/dashboard-bundle/
+          path: |
+            reports/dashboard-bundle/summary.json
+            reports/dashboard-bundle/records.json
+            reports/dashboard-bundle/report/
+            reports/dashboard-bundle/report-generation.log
           if-no-files-found: error
           retention-days: 14
