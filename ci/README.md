@@ -1,6 +1,8 @@
 # CI/CD
 
-Workflow `.github/workflows/tests.yml` dùng bộ Lab mới. Hướng dẫn: `docs/testing-guide/ci-cd-testing.md`. Chạy local bằng `npm run ci:local`, từng nhóm bằng `npm run ci:topic -- web`. Script tự build/start/health-check/stop backend tại 5097 và ghi reports/ci/.
+Workflow `.github/workflows/tests.yml` dùng bộ Lab mới. Hướng dẫn: `docs/testing-guide/ci-cd-testing.md`. CI/CD chạy trên GitHub Actions khi push/PR hoặc chọn Run workflow; không có mục CI/CD trong lab:menu.
+
+`npm run ci:local` và `npm run ci:topic -- web` là công cụ local tùy chọn để kiểm tra trước khi push. Script tự build/start/health-check/stop backend tại 5097 và ghi reports/ci/; không gửi code hoặc kích hoạt GitHub Actions.
 
 GitHub Actions bắt buộc đặt workflow tại `.github/workflows`; folder ci sẽ giữ script hỗ trợ và hướng dẫn. Không đặt workflow ở ci rồi cho rằng GitHub sẽ tự chạy.
 

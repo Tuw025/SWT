@@ -8,7 +8,7 @@ public sealed class DateChecker
     public CheckDateResult Check(CheckDateRequest request)
     {
         // Stop at the first error in the documented Day -> Month -> Year order.
-        var dayError = ParseField(request.Day, "Day", 1, 31, out var day);
+        var dayError = ParseField(request.Day, "Day", 6, 31, out var day);
         if (dayError is not null) return dayError;
         var monthError = ParseField(request.Month, "Month", 1, 12, out var month);
         if (monthError is not null) return monthError;

@@ -1,3 +1,12 @@
 {
-  "decisions": []
+  "decisions": [
+    {
+      "id": "AI-001",
+      "fingerprint": "d4d0bb5cb5dd5a92560025719cadc0649d401d9006dae2a2752c76c7fd869598",
+      "decision": "approved",
+      "reviewer": "Triển",
+      "note": "vì lỗi khoảng trắng là do người dùng vô tình nên có thể dùng logic để tránh lỗi không mong muốn",
+      "reviewedAt": "2026-10-12T05:13:35.582Z"
+    }
+  ]
 }

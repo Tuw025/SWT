@@ -6,14 +6,10 @@ async function choose(prompt,choices){
   for(;;){const index=Number(await rl.question('Nhập số rồi Enter: '))-1;if(Number.isInteger(index)&&choices[index])return choices[index].value;console.log('Chọn một số trong danh sách.');}
 }
 (async()=>{
-  const topic=await choose('Chọn chủ đề kiểm thử',[{label:'API',value:'api'},{label:'Web E2E',value:'web'},{label:'Mobile E2E (giả lập)',value:'mobile'},{label:'Visual regression',value:'visual'},{label:'Performance',value:'performance'},{label:'AI-assisted: xem, duyệt và chạy case AI',value:'ai'},{label:'CI/CD: mô phỏng pipeline tại máy',value:'ci'}]);
-  if(topic==='ai'||topic==='ci'){
-    if(topic==='ci'){
-      console.log('Pipeline local tự quản lý backend ở port 5097; chạy API, Web, Visual, UI timing, AI đã duyệt, k6 observe. Giả lập không cần cho lượt này.');
-      await rl.question('Enter để bắt đầu (Ctrl+C hủy): ');
-    }
+  const topic=await choose('Chọn chủ đề kiểm thử',[{label:'API',value:'api'},{label:'Web E2E',value:'web'},{label:'Mobile E2E (giả lập)',value:'mobile'},{label:'Visual regression',value:'visual'},{label:'Performance',value:'performance'},{label:'AI-assisted: xem, duyệt và chạy case AI',value:'ai'}]);
+  if(topic==='ai'){
     rl.close();
-    const file=topic==='ai'?'ai-runner.cjs':'../ci/run-pipeline.cjs';
+    const file='ai-runner.cjs';
     const child=spawn(process.execPath,[path.join(__dirname,file)],{cwd:path.resolve(__dirname,'..'),stdio:'inherit',windowsHide:true});
     child.on('exit',code=>{process.exitCode=code??1;});child.on('error',e=>{console.error(e.message);process.exitCode=1;});return;
   }

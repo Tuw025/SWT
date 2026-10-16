@@ -1,0 +1,3640 @@
+{
+  "phase": "baseline verification, not teaching test suites",
+  "runDate": "2026-10-08",
+  "api": {
+    "total": 224,
+    "passed": 224,
+    "maximumObservedRequestMs": 40.776,
+    "cases": [
+      {
+        "name": "01/01/2024",
+        "passed": true,
+        "elapsedMs": 40.776,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/01/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/01/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/02/2024",
+        "passed": true,
+        "elapsedMs": 13.361,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/02/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/02/2024",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/03/2024",
+        "passed": true,
+        "elapsedMs": 20.517,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/03/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/03/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/04/2024",
+        "passed": true,
+        "elapsedMs": 0.783,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/04/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/04/2024",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/05/2024",
+        "passed": true,
+        "elapsedMs": 0.635,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/05/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/05/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/06/2024",
+        "passed": true,
+        "elapsedMs": 0.576,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/06/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/06/2024",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/07/2024",
+        "passed": true,
+        "elapsedMs": 0.533,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/07/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/07/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/08/2024",
+        "passed": true,
+        "elapsedMs": 12.918,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/08/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/08/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/09/2024",
+        "passed": true,
+        "elapsedMs": 14.947,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/09/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/09/2024",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/10/2024",
+        "passed": true,
+        "elapsedMs": 0.972,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/10/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/10/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/11/2024",
+        "passed": true,
+        "elapsedMs": 14.813,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/11/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/11/2024",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "01/12/2024",
+        "passed": true,
+        "elapsedMs": 0.99,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/12/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/12/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/1000",
+        "passed": true,
+        "elapsedMs": 0.694,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/1000 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/1000",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/1600",
+        "passed": true,
+        "elapsedMs": 0.647,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/1600 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/1600",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/1700",
+        "passed": true,
+        "elapsedMs": 0.54,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/1700 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/1700",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/1800",
+        "passed": true,
+        "elapsedMs": 18.52,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/1800 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/1800",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/1900",
+        "passed": true,
+        "elapsedMs": 23.682,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/1900 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/1900",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/1999",
+        "passed": true,
+        "elapsedMs": 16.296,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/1999 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/1999",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/2000",
+        "passed": true,
+        "elapsedMs": 16.963,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/2000 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/2000",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/2004",
+        "passed": true,
+        "elapsedMs": 13.854,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/2004 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/2004",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/2023",
+        "passed": true,
+        "elapsedMs": 20.048,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/2023 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/2023",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/2024",
+        "passed": true,
+        "elapsedMs": 20.573,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/2024",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/2100",
+        "passed": true,
+        "elapsedMs": 14.338,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/2100 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/2100",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/2400",
+        "passed": true,
+        "elapsedMs": 0.898,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/2400 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/2400",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/2999",
+        "passed": true,
+        "elapsedMs": 0.621,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/2999 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/2999",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/02/3000",
+        "passed": true,
+        "elapsedMs": 17.795,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/02/3000 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/02/3000",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/1000",
+        "passed": true,
+        "elapsedMs": 13.866,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/1000 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/1000",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/1600",
+        "passed": true,
+        "elapsedMs": 14.505,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/1600 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/1600",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/1700",
+        "passed": true,
+        "elapsedMs": 13.12,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/1700 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/1700",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/1800",
+        "passed": true,
+        "elapsedMs": 13.82,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/1800 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/1800",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/1900",
+        "passed": true,
+        "elapsedMs": 0.952,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/1900 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/1900",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/1999",
+        "passed": true,
+        "elapsedMs": 0.642,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/1999 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/1999",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/2000",
+        "passed": true,
+        "elapsedMs": 0.513,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/2000 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/2000",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/2004",
+        "passed": true,
+        "elapsedMs": 0.541,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/2004 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/2004",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/2023",
+        "passed": true,
+        "elapsedMs": 0.545,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/2023 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/2023",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/2024",
+        "passed": true,
+        "elapsedMs": 24.435,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/2024",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/2100",
+        "passed": true,
+        "elapsedMs": 23.409,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/2100 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/2100",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/2400",
+        "passed": true,
+        "elapsedMs": 0.884,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/2400 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/2400",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/2999",
+        "passed": true,
+        "elapsedMs": 0.745,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/2999 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/2999",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/04/3000",
+        "passed": true,
+        "elapsedMs": 14.495,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/04/3000 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/04/3000",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/1000",
+        "passed": true,
+        "elapsedMs": 22.437,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/1000 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/1000",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/1600",
+        "passed": true,
+        "elapsedMs": 15.165,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/1600 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/1600",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/1700",
+        "passed": true,
+        "elapsedMs": 0.702,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/1700 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/1700",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/1800",
+        "passed": true,
+        "elapsedMs": 0.707,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/1800 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/1800",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/1900",
+        "passed": true,
+        "elapsedMs": 0.511,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/1900 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/1900",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/1999",
+        "passed": true,
+        "elapsedMs": 10.922,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/1999 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/1999",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/2000",
+        "passed": true,
+        "elapsedMs": 22.827,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/2000 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/2000",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/2004",
+        "passed": true,
+        "elapsedMs": 15.346,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/2004 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/2004",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/2023",
+        "passed": true,
+        "elapsedMs": 18.323,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/2023 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/2023",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/2024",
+        "passed": true,
+        "elapsedMs": 0.774,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/2100",
+        "passed": true,
+        "elapsedMs": 0.795,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/2100 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/2100",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/2400",
+        "passed": true,
+        "elapsedMs": 0.564,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/2400 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/2400",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/2999",
+        "passed": true,
+        "elapsedMs": 0.535,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/2999 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/2999",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "28/12/3000",
+        "passed": true,
+        "elapsedMs": 0.561,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "28/12/3000 is correct date time!",
+          "field": null,
+          "normalizedDate": "28/12/3000",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/1000",
+        "passed": true,
+        "elapsedMs": 15.983,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "29/02/1000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/1000",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/1600",
+        "passed": true,
+        "elapsedMs": 0.797,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/02/1600 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/1600",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/1700",
+        "passed": true,
+        "elapsedMs": 12.796,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "29/02/1700 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/1700",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/1800",
+        "passed": true,
+        "elapsedMs": 20.911,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "29/02/1800 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/1800",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/1900",
+        "passed": true,
+        "elapsedMs": 14.666,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "29/02/1900 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/1900",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/1999",
+        "passed": true,
+        "elapsedMs": 12.735,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "29/02/1999 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/1999",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/2000",
+        "passed": true,
+        "elapsedMs": 14.018,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/02/2000 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/2000",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/2004",
+        "passed": true,
+        "elapsedMs": 0.878,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/02/2004 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/2004",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/2023",
+        "passed": true,
+        "elapsedMs": 13.676,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "29/02/2023 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/2023",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/2024",
+        "passed": true,
+        "elapsedMs": 13.938,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/02/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/2024",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/2100",
+        "passed": true,
+        "elapsedMs": 21.284,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "29/02/2100 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/2100",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/2400",
+        "passed": true,
+        "elapsedMs": 13.497,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/02/2400 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/2400",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/2999",
+        "passed": true,
+        "elapsedMs": 0.945,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "29/02/2999 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/2999",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/02/3000",
+        "passed": true,
+        "elapsedMs": 11.998,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "29/02/3000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "29/02/3000",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/1000",
+        "passed": true,
+        "elapsedMs": 21.604,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/1000 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/1000",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/1600",
+        "passed": true,
+        "elapsedMs": 15.492,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/1600 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/1600",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/1700",
+        "passed": true,
+        "elapsedMs": 15.345,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/1700 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/1700",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/1800",
+        "passed": true,
+        "elapsedMs": 16.746,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/1800 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/1800",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/1900",
+        "passed": true,
+        "elapsedMs": 0.803,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/1900 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/1900",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/1999",
+        "passed": true,
+        "elapsedMs": 12.955,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/1999 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/1999",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/2000",
+        "passed": true,
+        "elapsedMs": 14.135,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/2000 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/2000",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/2004",
+        "passed": true,
+        "elapsedMs": 0.831,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/2004 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/2004",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/2023",
+        "passed": true,
+        "elapsedMs": 12.988,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/2023 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/2023",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/2024",
+        "passed": true,
+        "elapsedMs": 23.58,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/2024",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/2100",
+        "passed": true,
+        "elapsedMs": 20.539,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/2100 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/2100",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/2400",
+        "passed": true,
+        "elapsedMs": 11.947,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/2400 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/2400",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/2999",
+        "passed": true,
+        "elapsedMs": 13.572,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/2999 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/2999",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/04/3000",
+        "passed": true,
+        "elapsedMs": 19.236,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/04/3000 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/04/3000",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/1000",
+        "passed": true,
+        "elapsedMs": 0.862,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/1000 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/1000",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/1600",
+        "passed": true,
+        "elapsedMs": 14.384,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/1600 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/1600",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/1700",
+        "passed": true,
+        "elapsedMs": 13.051,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/1700 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/1700",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/1800",
+        "passed": true,
+        "elapsedMs": 13.953,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/1800 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/1800",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/1900",
+        "passed": true,
+        "elapsedMs": 0.838,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/1900 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/1900",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/1999",
+        "passed": true,
+        "elapsedMs": 0.585,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/1999 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/1999",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/2000",
+        "passed": true,
+        "elapsedMs": 0.539,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/2000 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/2000",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/2004",
+        "passed": true,
+        "elapsedMs": 12.274,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/2004 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/2004",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/2023",
+        "passed": true,
+        "elapsedMs": 12.464,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/2023 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/2023",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/2024",
+        "passed": true,
+        "elapsedMs": 15.443,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/2100",
+        "passed": true,
+        "elapsedMs": 13.153,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/2100 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/2100",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/2400",
+        "passed": true,
+        "elapsedMs": 13.686,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/2400 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/2400",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/2999",
+        "passed": true,
+        "elapsedMs": 0.849,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/2999 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/2999",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "29/12/3000",
+        "passed": true,
+        "elapsedMs": 14.298,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "29/12/3000 is correct date time!",
+          "field": null,
+          "normalizedDate": "29/12/3000",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/1000",
+        "passed": true,
+        "elapsedMs": 12.86,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/1000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/1000",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/1600",
+        "passed": true,
+        "elapsedMs": 16.125,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/1600 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/1600",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/1700",
+        "passed": true,
+        "elapsedMs": 0.736,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/1700 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/1700",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/1800",
+        "passed": true,
+        "elapsedMs": 17.872,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/1800 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/1800",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/1900",
+        "passed": true,
+        "elapsedMs": 14.204,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/1900 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/1900",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/1999",
+        "passed": true,
+        "elapsedMs": 12.873,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/1999 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/1999",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/2000",
+        "passed": true,
+        "elapsedMs": 14.648,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/2000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/2000",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/2004",
+        "passed": true,
+        "elapsedMs": 0.899,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/2004 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/2004",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/2023",
+        "passed": true,
+        "elapsedMs": 0.66,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/2023 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/2023",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/2024",
+        "passed": true,
+        "elapsedMs": 11.615,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/2024 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/2024",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/2100",
+        "passed": true,
+        "elapsedMs": 14.77,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/2100 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/2100",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/2400",
+        "passed": true,
+        "elapsedMs": 12.136,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/2400 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/2400",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/2999",
+        "passed": true,
+        "elapsedMs": 0.851,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/2999 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/2999",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/02/3000",
+        "passed": true,
+        "elapsedMs": 0.709,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "30/02/3000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "30/02/3000",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/1000",
+        "passed": true,
+        "elapsedMs": 0.684,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/1000 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/1000",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/1600",
+        "passed": true,
+        "elapsedMs": 12.341,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/1600 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/1600",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/1700",
+        "passed": true,
+        "elapsedMs": 0.857,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/1700 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/1700",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/1800",
+        "passed": true,
+        "elapsedMs": 19.712,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/1800 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/1800",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/1900",
+        "passed": true,
+        "elapsedMs": 0.751,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/1900 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/1900",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/1999",
+        "passed": true,
+        "elapsedMs": 12.837,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/1999 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/1999",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/2000",
+        "passed": true,
+        "elapsedMs": 0.818,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/2000 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/2000",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/2004",
+        "passed": true,
+        "elapsedMs": 0.532,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/2004 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/2004",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/2023",
+        "passed": true,
+        "elapsedMs": 0.525,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/2023 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/2023",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/2024",
+        "passed": true,
+        "elapsedMs": 11.565,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/2024",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/2100",
+        "passed": true,
+        "elapsedMs": 15.616,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/2100 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/2100",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/2400",
+        "passed": true,
+        "elapsedMs": 15.389,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/2400 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/2400",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/2999",
+        "passed": true,
+        "elapsedMs": 15.291,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/2999 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/2999",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/04/3000",
+        "passed": true,
+        "elapsedMs": 16.055,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/04/3000 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/04/3000",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/1000",
+        "passed": true,
+        "elapsedMs": 14.922,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/1000 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/1000",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/1600",
+        "passed": true,
+        "elapsedMs": 0.929,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/1600 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/1600",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/1700",
+        "passed": true,
+        "elapsedMs": 0.677,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/1700 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/1700",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/1800",
+        "passed": true,
+        "elapsedMs": 13.889,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/1800 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/1800",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/1900",
+        "passed": true,
+        "elapsedMs": 15.564,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/1900 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/1900",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/1999",
+        "passed": true,
+        "elapsedMs": 16.164,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/1999 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/1999",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/2000",
+        "passed": true,
+        "elapsedMs": 13.094,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/2000 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/2000",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/2004",
+        "passed": true,
+        "elapsedMs": 16.279,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/2004 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/2004",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/2023",
+        "passed": true,
+        "elapsedMs": 0.801,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/2023 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/2023",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/2024",
+        "passed": true,
+        "elapsedMs": 13.68,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/2100",
+        "passed": true,
+        "elapsedMs": 0.678,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/2100 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/2100",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/2400",
+        "passed": true,
+        "elapsedMs": 24.898,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/2400 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/2400",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/2999",
+        "passed": true,
+        "elapsedMs": 15.936,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/2999 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/2999",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "30/12/3000",
+        "passed": true,
+        "elapsedMs": 0.806,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "30/12/3000 is correct date time!",
+          "field": null,
+          "normalizedDate": "30/12/3000",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/1000",
+        "passed": true,
+        "elapsedMs": 14.383,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/1000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/1000",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/1600",
+        "passed": true,
+        "elapsedMs": 0.943,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/1600 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/1600",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/1700",
+        "passed": true,
+        "elapsedMs": 0.666,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/1700 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/1700",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/1800",
+        "passed": true,
+        "elapsedMs": 14.422,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/1800 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/1800",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/1900",
+        "passed": true,
+        "elapsedMs": 15.31,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/1900 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/1900",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/1999",
+        "passed": true,
+        "elapsedMs": 14.581,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/1999 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/1999",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/2000",
+        "passed": true,
+        "elapsedMs": 15.443,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/2000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/2000",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/2004",
+        "passed": true,
+        "elapsedMs": 14.948,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/2004 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/2004",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/2023",
+        "passed": true,
+        "elapsedMs": 15.363,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/2023 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/2023",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/2024",
+        "passed": true,
+        "elapsedMs": 15.771,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/2024 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/2024",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/2100",
+        "passed": true,
+        "elapsedMs": 0.764,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/2100 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/2100",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/2400",
+        "passed": true,
+        "elapsedMs": 14.876,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/2400 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/2400",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/2999",
+        "passed": true,
+        "elapsedMs": 13.856,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/2999 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/2999",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/02/3000",
+        "passed": true,
+        "elapsedMs": 15.612,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/02/3000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/02/3000",
+          "daysInMonth": 28,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/1000",
+        "passed": true,
+        "elapsedMs": 15.619,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/1000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/1000",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/1600",
+        "passed": true,
+        "elapsedMs": 15.206,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/1600 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/1600",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/1700",
+        "passed": true,
+        "elapsedMs": 15.504,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/1700 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/1700",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/1800",
+        "passed": true,
+        "elapsedMs": 16.14,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/1800 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/1800",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/1900",
+        "passed": true,
+        "elapsedMs": 15.151,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/1900 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/1900",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/1999",
+        "passed": true,
+        "elapsedMs": 15.968,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/1999 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/1999",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/2000",
+        "passed": true,
+        "elapsedMs": 0.785,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/2000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/2000",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/2004",
+        "passed": true,
+        "elapsedMs": 14.581,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/2004 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/2004",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/2023",
+        "passed": true,
+        "elapsedMs": 14.712,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/2023 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/2023",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/2024",
+        "passed": true,
+        "elapsedMs": 15.485,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/2024 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/2024",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/2100",
+        "passed": true,
+        "elapsedMs": 15.898,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/2100 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/2100",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/2400",
+        "passed": true,
+        "elapsedMs": 0.995,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/2400 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/2400",
+          "daysInMonth": 30,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/2999",
+        "passed": true,
+        "elapsedMs": 15.941,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/2999 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/2999",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/04/3000",
+        "passed": true,
+        "elapsedMs": 14.751,
+        "expectedValid": false,
+        "response": {
+          "outcome": "invalid_date",
+          "isValid": false,
+          "message": "31/04/3000 is NOT correct date time!",
+          "field": null,
+          "normalizedDate": "31/04/3000",
+          "daysInMonth": 30,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/1000",
+        "passed": true,
+        "elapsedMs": 16.03,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/1000 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/1000",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/1600",
+        "passed": true,
+        "elapsedMs": 0.844,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/1600 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/1600",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/1700",
+        "passed": true,
+        "elapsedMs": 13.957,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/1700 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/1700",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/1800",
+        "passed": true,
+        "elapsedMs": 0.837,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/1800 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/1800",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/1900",
+        "passed": true,
+        "elapsedMs": 0.625,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/1900 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/1900",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/1999",
+        "passed": true,
+        "elapsedMs": 14.449,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/1999 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/1999",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/2000",
+        "passed": true,
+        "elapsedMs": 14.762,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/2000 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/2000",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/2004",
+        "passed": true,
+        "elapsedMs": 0.775,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/2004 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/2004",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/2023",
+        "passed": true,
+        "elapsedMs": 18.137,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/2023 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/2023",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/2024",
+        "passed": true,
+        "elapsedMs": 14.883,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/2100",
+        "passed": true,
+        "elapsedMs": 1.049,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/2100 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/2100",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/2400",
+        "passed": true,
+        "elapsedMs": 14.013,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/2400 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/2400",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/2999",
+        "passed": true,
+        "elapsedMs": 15.856,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/2999 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/2999",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "31/12/3000",
+        "passed": true,
+        "elapsedMs": 16.77,
+        "expectedValid": true,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "31/12/3000 is correct date time!",
+          "field": null,
+          "normalizedDate": "31/12/3000",
+          "daysInMonth": 31,
+          "isLeapYear": false
+        },
+        "status": 200
+      },
+      {
+        "name": "day:format:''",
+        "passed": true,
+        "elapsedMs": 16.203,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is incorrect format!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:format:'abc'",
+        "passed": true,
+        "elapsedMs": 1.06,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is incorrect format!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:format:'1.5'",
+        "passed": true,
+        "elapsedMs": 0.81,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is incorrect format!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:format:'1e1'",
+        "passed": true,
+        "elapsedMs": 12.654,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is incorrect format!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:format:'1 0'",
+        "passed": true,
+        "elapsedMs": 15.573,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is incorrect format!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:format:'+'",
+        "passed": true,
+        "elapsedMs": 0.876,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is incorrect format!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:format:'١'",
+        "passed": true,
+        "elapsedMs": 0.702,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is incorrect format!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:format:None",
+        "passed": true,
+        "elapsedMs": 12.973,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is incorrect format!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:range:-1",
+        "passed": true,
+        "elapsedMs": 1.028,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is out of range!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:range:0",
+        "passed": true,
+        "elapsedMs": 0.794,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is out of range!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:range:32",
+        "passed": true,
+        "elapsedMs": 14.244,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is out of range!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "day:range:999999999999999999999",
+        "passed": true,
+        "elapsedMs": 19.106,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is out of range!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:format:''",
+        "passed": true,
+        "elapsedMs": 14.508,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is incorrect format!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:format:'abc'",
+        "passed": true,
+        "elapsedMs": 0.832,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is incorrect format!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:format:'1.5'",
+        "passed": true,
+        "elapsedMs": 14.97,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is incorrect format!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:format:'1e1'",
+        "passed": true,
+        "elapsedMs": 15.647,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is incorrect format!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:format:'1 0'",
+        "passed": true,
+        "elapsedMs": 14.57,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is incorrect format!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:format:'+'",
+        "passed": true,
+        "elapsedMs": 11.879,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is incorrect format!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:format:'١'",
+        "passed": true,
+        "elapsedMs": 15.276,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is incorrect format!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:format:None",
+        "passed": true,
+        "elapsedMs": 15.709,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is incorrect format!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:range:-1",
+        "passed": true,
+        "elapsedMs": 15.147,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is out of range!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:range:0",
+        "passed": true,
+        "elapsedMs": 15.345,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is out of range!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:range:13",
+        "passed": true,
+        "elapsedMs": 15.759,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is out of range!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "month:range:999999999999999999999",
+        "passed": true,
+        "elapsedMs": 15.214,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Month is out of range!",
+          "field": "Month",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:format:''",
+        "passed": true,
+        "elapsedMs": 25.881,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is incorrect format!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:format:'abc'",
+        "passed": true,
+        "elapsedMs": 15.481,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is incorrect format!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:format:'1.5'",
+        "passed": true,
+        "elapsedMs": 0.974,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is incorrect format!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:format:'1e1'",
+        "passed": true,
+        "elapsedMs": 14.179,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is incorrect format!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:format:'1 0'",
+        "passed": true,
+        "elapsedMs": 15.907,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is incorrect format!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:format:'+'",
+        "passed": true,
+        "elapsedMs": 0.908,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is incorrect format!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:format:'١'",
+        "passed": true,
+        "elapsedMs": 15.788,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is incorrect format!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:format:None",
+        "passed": true,
+        "elapsedMs": 15.745,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is incorrect format!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:range:-1",
+        "passed": true,
+        "elapsedMs": 16.177,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is out of range!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:range:999",
+        "passed": true,
+        "elapsedMs": 1.047,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is out of range!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:range:3001",
+        "passed": true,
+        "elapsedMs": 14.02,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is out of range!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "year:range:999999999999999999999",
+        "passed": true,
+        "elapsedMs": 16.36,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Year is out of range!",
+          "field": "Year",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "integer normalization",
+        "passed": true,
+        "elapsedMs": 18.539,
+        "status": 200,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/02/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/02/2024",
+          "daysInMonth": 29,
+          "isLeapYear": true
+        }
+      },
+      {
+        "name": "integer normalization",
+        "passed": true,
+        "elapsedMs": 14.916,
+        "status": 200,
+        "response": {
+          "outcome": "valid_date",
+          "isValid": true,
+          "message": "01/01/2024 is correct date time!",
+          "field": null,
+          "normalizedDate": "01/01/2024",
+          "daysInMonth": 31,
+          "isLeapYear": true
+        }
+      },
+      {
+        "name": "first error is Day",
+        "passed": true,
+        "elapsedMs": 16.34,
+        "status": 422,
+        "response": {
+          "outcome": "validation_error",
+          "isValid": null,
+          "message": "Input data for Day is incorrect format!",
+          "field": "Day",
+          "normalizedDate": null,
+          "daysInMonth": null,
+          "isLeapYear": null
+        }
+      },
+      {
+        "name": "invalid request: {",
+        "passed": true,
+        "elapsedMs": 22.76,
+        "status": 400,
+        "response": {
+          "outcome": "request_error",
+          "message": "Use a JSON object with day, month and year as strings."
+        }
+      },
+      {
+        "name": "invalid request: null",
+        "passed": true,
+        "elapsedMs": 24.957,
+        "status": 400,
+        "response": {
+          "outcome": "request_error",
+          "message": "Request body must be a JSON object."
+        }
+      },
+      {
+        "name": "invalid request: []",
+        "passed": true,
+        "elapsedMs": 15.508,
+        "status": 400,
+        "response": {
+          "outcome": "request_error",
+          "message": "Use a JSON object with day, month and year as strings."
+        }
+      },
+      {
+        "name": "invalid request: {\"day\":1,\"month\":\"1\",\"year\":\"2024\"}",
+        "passed": true,
+        "elapsedMs": 14.908,
+        "status": 400,
+        "response": {
+          "outcome": "request_error",
+          "message": "Use a JSON object with day, month and year as strings."
+        }
+      },
+      {
+        "name": "unsupported media type",
+        "passed": true,
+        "elapsedMs": 1.041,
+        "status": 415,
+        "response": {
+          "outcome": "request_error",
+          "message": "Content-Type must be application/json."
+        }
+      }
+    ]
+  },
+  "mobile": {
+    "status": "not executed",
+    "reason": "Flutter SDK and device not available"
+  },
+  "web": {
+    "browser": "Chromium",
+    "total": 16,
+    "passed": 16,
+    "consoleErrors": [],
+    "cases": [
+      {
+        "name": "29/02/2000 is correct date time!",
+        "passed": true,
+        "elapsedMs": 75.727,
+        "withinOneSecond": true
+      },
+      {
+        "name": "29/02/1900 is NOT correct date time!",
+        "passed": true,
+        "elapsedMs": 54.385,
+        "withinOneSecond": true
+      },
+      {
+        "name": "31/04/2024 is NOT correct date time!",
+        "passed": true,
+        "elapsedMs": 58.359,
+        "withinOneSecond": true
+      },
+      {
+        "name": "Input data for Day is incorrect format!",
+        "passed": true,
+        "elapsedMs": 56.594,
+        "withinOneSecond": true
+      },
+      {
+        "name": "Input data for Month is out of range!",
+        "passed": true,
+        "elapsedMs": 56.353,
+        "withinOneSecond": true
+      },
+      {
+        "name": "Input data for Year is out of range!",
+        "passed": true,
+        "elapsedMs": 67.105,
+        "withinOneSecond": true
+      },
+      {
+        "name": "Clear empties all three inputs",
+        "passed": true
+      },
+      {
+        "name": "Close -> No preserves form",
+        "passed": true
+      },
+      {
+        "name": "Escape cancels close confirmation",
+        "passed": true
+      },
+      {
+        "name": "Close -> Yes and reopen",
+        "passed": true
+      },
+      {
+        "name": "Cannot connect to the checker. Please try again.",
+        "passed": true,
+        "elapsedMs": 57.011,
+        "withinOneSecond": true
+      },
+      {
+        "name": "01/01/2024 is correct date time!",
+        "passed": true,
+        "elapsedMs": 59.879,
+        "withinOneSecond": true
+      },
+      {
+        "name": "Recovery after connection failure",
+        "passed": true
+      },
+      {
+        "name": "Responsive width 320",
+        "passed": true
+      },
+      {
+        "name": "Responsive width 390",
+        "passed": true
+      },
+      {
+        "name": "Responsive width 768",
+        "passed": true
+      }
+    ]
+  },
+  "build": {
+    "configuration": "Debug",
+    "status": "passed",
+    "warnings": 0,
+    "errors": 0,
+    "sdk": "10.0.401"
+  },
+  "publish": {
+    "configuration": "Release",
+    "status": "passed",
+    "checks": [
+      "published web index",
+      "logo",
+      "API health",
+      "valid date API"
+    ]
+  },
+  "syntax": {
+    "webJavaScript": "passed",
+    "powerShellScripts": "passed",
+    "flutterAnalyze": "not executed"
+  }
+}
